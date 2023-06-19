@@ -1,0 +1,31 @@
+.authors_list {
+    display: flex;
+}
+
+.item9 {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+}
+
+h3 {
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -1px;
+    color: #232536;
+}
+
+p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #6D6E76;
+    padding-top: 5px;
+
+}
