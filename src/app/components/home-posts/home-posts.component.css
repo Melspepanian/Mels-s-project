@@ -1,0 +1,29 @@
+.home_section_first {
+    display: flex;
+}
+
+.second_section_elem1_text2 {
+    color: #592EA9;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 20px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.second_section_elem1_text {
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 20px;
+    color: #4C4C4C;
+}
+
+.second_section_second_elem2_text {
+    font-size: 24px;
+    font-family: Sen;
+    font-weight: 700;
+    line-height: 32px;
+    color: #232536;
+}

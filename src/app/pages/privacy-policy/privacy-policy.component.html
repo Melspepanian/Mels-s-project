@@ -1,0 +1,17 @@
+<section class="privacy_policy">
+    <div class="container">
+        <div class="privacy_policyt_section1">
+            <h2 class="privacy_policyt_section1_title">Privacy Policy</h2>
+            <p class="privacy_policyt_section1_text">Last Updated on 27th January 2022</p>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="privacy_policy_section2">
+            <div class="privacy_block" *ngFor = "let item of privacy">
+                <app-privacy [privacyInner] = "item"></app-privacy>
+            </div>
+        </div>
+    </div>
+</section>

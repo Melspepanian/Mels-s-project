@@ -1,0 +1,58 @@
+<section class="blog_section_1">
+    <div class="container">
+        <div class="blog_section1_parrent">
+            <div class="blog_section1_child1">
+                <p class="blog_section1_child1_text1">Featured Post</p>
+                <h2>Step-by-step guide to choosing great<br> font pairs</h2>
+                <p class="blog_section1_child1_text3">By <span>John Doe</span> | May 23, 2022</p>
+                <p class="blog_section1_child1_text4">Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur.
+                    Excepteur sint occaecat cupidatat non proident.</p>
+                <button class="blog_section_first_button"><a href="">Read More ></a></button>
+            </div>
+            <div class="blog_section1_child2">
+                <img src="assets/images/blog1.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="blog_section_2">
+            <h2>All Posts</h2>
+            <div class="blog_section_2_parrent">
+                <div class="blog_section_2_child">
+                    <div class="all_posts_block" >
+                        <app-posts [postsInner]="item" *ngFor="let item of posts"></app-posts>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <h2 class="section_4_title">Choose A Catagory</h2>
+        <div class="section_4_parrent">
+            <div class="category-block" *ngFor="let item of category">
+                <app-category [categoryInner]="item"></app-category>
+
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="section_9_elem">
+            <div class="section_9_elem_1">
+                <h2 class="section_9_elem_title">Join our team to be a part of our story</h2>
+                <p class="section_9_elem_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt.</p>
+            </div>
+            <button class="section1_button"><a class="section1_button_style" href="#">Join Now
+                </a></button>
+        </div>
+    </div>
+</section>

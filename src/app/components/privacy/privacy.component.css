@@ -1,0 +1,31 @@
+.privacy_policy_section2_title {
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: -2px;
+    color: #232536;
+    padding-bottom: 50px;
+}
+
+.privacy_policy_section2_text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #232536;
+    opacity: 0.6;
+    padding-bottom: 30px;
+}
+.privacy_policy_section2_title:nth-last-child(1) {
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 64px;
+    letter-spacing: -2px;
+    color: #232536;
+    padding-bottom: 50px;
+}

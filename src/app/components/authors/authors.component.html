@@ -1,12 +1,14 @@
-<div>
-    <img src="{{authorsInner.img}}" alt="">
-    <h3>{{authorsInner.title}}</h3>
-    <p>{{authorsInner.paragraph}}</p>
-</div>
-<div class="item9" >
-<div *ngFor="let i of authorsInner.socials">
-    <div class="authors_list">
-        <img src="{{i}}" alt="">
+<a routerLink="/layout/author">
+    <div>
+        <img src="{{authorsInner.img}}" alt="">
+        <h3>{{authorsInner.title}}</h3>
+        <p>{{authorsInner.paragraph}}</p>
     </div>
-</div>
-</div>
+    <div class="item9">
+        <div *ngFor="let i of authorsInner.socials">
+            <div class="authors_list">
+                <img src="{{i}}" alt="">
+            </div>
+        </div>
+    </div>
+</a>

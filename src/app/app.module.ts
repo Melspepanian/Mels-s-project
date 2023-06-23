@@ -7,9 +7,71 @@ import { NavComponent } from './components/header/nav/nav.component';
 import { LayoutComponent } from './layout/layout/layout.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
-import { CategoryComponent } from './components/category/category.component';
 import { AuthorsComponent } from './components/authors/authors.component';
 import { JoinComponent } from './components/join/join.component';
+import { Route, RouterModule } from '@angular/router';
+import { BlogComponent } from './pages/blog/blog.component';
+import { PostsComponent } from './components/posts/posts.component';
+import { BlogPostComponent } from './pages/blog-post/blog-post.component';
+import { ReadsComponent } from './components/reads/reads.component';
+import { AboutUsComponent } from './pages/about-us/about-us.component';
+import { CategoryComponent } from './components/category/category.component';
+import { CategoryPageComponent } from './pages/category-page/category-page.component';
+import { SecondCategoryComponent } from './components/second-category/second-category.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { AuthorComponent } from './pages/author/author.component';
+import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.component';
+import { PrivacyComponent } from './components/privacy/privacy.component';
+import { TagsComponent } from './components/tags/tags.component';
+import { HomePostsComponent } from './components/home-posts/home-posts.component';
+
+
+ 
+
+
+const route: Route[] = [
+  {
+    path: "layout",
+    component: LayoutComponent,
+    children: [
+      {
+        path: "home",
+        component: HomeComponent
+      },
+      {
+        path: "blog",
+        component: BlogComponent
+      },
+      {
+        path: "blog_post",
+        component: BlogPostComponent
+      },
+      {
+        path: "about_us",
+        component: AboutUsComponent
+      },
+     
+      {
+        path: "category_page",
+        component:CategoryPageComponent
+      },
+     
+      {
+        path: "contact",
+        component:ContactComponent
+      },
+      {
+        path:"author",
+        component:AuthorComponent
+      },
+      {
+        path: "privacy_policy",
+        component:PrivacyPolicyComponent
+      }
+    ]
+  }
+]
+
 
 @NgModule({
   declarations: [
@@ -21,10 +83,28 @@ import { JoinComponent } from './components/join/join.component';
     HomeComponent,
     CategoryComponent,
     AuthorsComponent,
-    JoinComponent
+    JoinComponent,
+    BlogComponent,
+    PostsComponent,
+    BlogPostComponent,
+    ReadsComponent,
+    AboutUsComponent,
+    CategoryPageComponent,
+    SecondCategoryComponent,
+    ContactComponent,
+    AuthorComponent,
+    PrivacyPolicyComponent,
+    PrivacyComponent,
+    TagsComponent,
+    HomePostsComponent,
+    
+    
+ 
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(route)
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,249 @@
+.contact_section {
+    width: 768px;
+    margin: auto;
+    padding-bottom: 120px;
+    padding-top: 120px;
+}
+
+.contact_section_title1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #232536;
+}
+
+.contact_section_title2 {
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    text-align: center;
+    letter-spacing: -2px;
+    color: #232536;
+
+}
+
+.contact_section_text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #6D6E76;
+    padding-top: 41px;
+    padding-bottom: 65px;
+
+}
+
+.contact_section_elem1 {
+    background-color: #592EA9;
+}
+
+.contact_section_elem1_child_title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    opacity: 0.6;
+    border-bottom: 1px solid #6941B1;
+    padding-bottom: 21px;
+}
+
+.contact_section_elem1_child {
+    width: 45%;
+}
+
+.contact_section_elem1 {
+    display: flex;
+    padding-left: 60px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 60px;
+    justify-content: space-between;
+}
+
+.contact_section_elem1_child_text {
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+    color: #FFFFFF;
+    padding-top: 10px;
+
+}
+
+.contact_section_elem1_child_text1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+
+.input_style {
+    padding: 24px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.input_style::placeholder {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #232536;
+
+}
+
+.form_select {
+    width: 100%;
+    padding: 24px;
+}
+
+select {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #232536;
+
+}
+
+.input_style1 {
+    padding: 24px;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.input_style1::placeholder {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #232536;
+
+}
+
+.input_style2 {
+    padding: 24px;
+    padding-bottom: 100px;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.form_button_style {
+    width: 100%;
+    background-color: #FFD050;
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+
+    text-align: center;
+    color: #232536;
+    padding: 23px 0;
+    border: none;
+}
+
+@media screen and (max-width:790px) {
+    .contact_section {
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+}
+
+@media screen and (max-width:550px) {
+    .input_style1 {
+        padding: 20px
+    }
+
+    .input_style {
+        padding: 20px;
+    }
+
+    .input_style {
+        padding: 20px;
+    }
+
+    .input_style2 {
+        padding: 24px;
+        padding-bottom: 31px;
+    }
+
+    .input_style {
+        padding: 20px
+    }
+
+    .input_style2 {
+        margin-top: 28px;
+    }
+
+    .contact_section_elem1 {
+        flex-direction: column;
+    }
+
+    .contact_section_elem1_child {
+        width: 100%;
+    }
+
+    .contact_section_title1 {
+        padding-bottom: 50px;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .contact_section {
+        padding-bottom: 0;
+    }
+
+    .input_style2 {
+        padding-bottom: 20px;
+    }
+
+    .contact_section_elem1_child_text {
+        font-size: 17px;
+        line-height: 15px;
+        padding-bottom: 10px
+    }
+
+    .contact_section_elem1_child_text1 {
+        font-size: 12px;
+    }
+
+    .input_style {
+        padding: 17px;
+    }
+    .contact_section_title2 {
+        font-size: 28px;
+    }
+    .contact_section_text {
+        font-size: 13px;
+    }
+
+
+}
+@media screen and (max-width:320px){
+    .contact_section {
+        padding-top: 36px;
+    }
+}

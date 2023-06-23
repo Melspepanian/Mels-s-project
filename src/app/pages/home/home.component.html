@@ -37,34 +37,11 @@
                     <p class="second_section_elems3">View All</p>
                 </div>
                 <div class="second_section_second_elem_2_2_1">
-                    <p class="second_section_elem1_text">By <span class="second_section_elem1_text2">John Doe</span>
-                        |
-                        May 23, 2022</p>
-                    <p class="second_section_second_elem2_text">8 Figma design systems that<br> you can download for
-                        free<br> today.</p>
+                    <div class="home_postBlock" *ngFor = "let item of tags">
+                   <app-home-posts [homeInner] = "item"></app-home-posts>
                 </div>
-                <div class="second_section_second_elem_2_2_1">
-                    <p class="second_section_elem1_text">By <span class="second_section_elem1_text2">John Doe</span>
-                        |
-                        May 23, 2022</p>
-                    <p class="second_section_second_elem2_text">8 Figma design systems that<br> you can download for
-                        free<br> today.</p>
                 </div>
-
-                <div class="second_section_second_elem_2_2_1">
-                    <p class="second_section_elem1_text">By <span class="second_section_elem1_text2">John Doe</span>
-                        |
-                        May 23, 2022</p>
-                    <p class="second_section_second_elem2_text">8 Figma design systems that<br> you can download for
-                        free<br> today.</p>
-                </div>
-                <div class="second_section_second_elem_2_2_1">
-                    <p class="second_section_elem1_text">By <span class="second_section_elem1_text2">John Doe</span>
-                        |
-                        May 23, 2022</p>
-                    <p class="second_section_second_elem2_text">8 Figma design systems that<br> you can download for
-                        free<br> today.</p>
-                </div>
+               
             </div>
 
         </div>
@@ -136,19 +113,21 @@
 
     </div>
 </section>
-<div class="container">
-    <div class="home_section_6">
-        <h2 class="home_section_6_parrent_title">List of Authors</h2>
-        <!-- <div class="home_section6_parrent"> -->
+<section>
+    <div class="container">
+        <div class="home_section_6">
+            <h2 class="home_section_6_parrent_title">List of Authors</h2>
+            <!-- <div class="home_section6_parrent"> -->
             <div class="home_section6_child">
                 <div class="authors_block" *ngFor="let item of  authors">
 
                     <app-authors [authorsInner]="item"></app-authors>
                 </div>
             </div>
-        <!-- </div> -->
+            <!-- </div> -->
+        </div>
     </div>
-</div>
+</section>
 <section>
     <div class="container">
         <div class="home_section_7_parent">

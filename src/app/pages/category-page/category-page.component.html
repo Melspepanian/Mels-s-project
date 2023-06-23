@@ -1,0 +1,61 @@
+<div class="category_section1">
+    <div class="container">
+        <div class="category_section1_elem1">
+            <h2 class="category_section1_elem1_title">Business</h2>
+            <p class="category_section1_elem1_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore.</p>
+            <p class="category_section1_elem1_text2">Blog > Business</p>
+        </div>
+    </div>
+
+</div>
+
+<div class="container">
+    <div class="category_section2_parrent">
+        <div class="category_section2_child1">
+
+            <div class="blog_section_2_child">
+                <div class="category_section2_child1_parent">
+                    <div class="blog_section_2_parrent">
+                        <div class="category_section2_child1">
+                            <div class="all_posts_block" *ngFor="let item of posts">
+                                <app-posts [postsInner]="item"></app-posts>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="category_section2_child2">
+            <h3 class="category_section2_child2_title">
+                Categories
+            </h3>
+            <div class="category_childs_parrent">
+                <div class="category_section2_child2_parent">
+                    <div class="category_section2_child2_child" *ngFor="let item of  sec_category">
+
+                        <app-second-category class="app_second_class"
+                            [secondCategoryInner]="item"></app-second-category>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="category_section2_elem2">
+                <h3 class="category_section2_elem2_title">All Tags</h3>
+                <div class="category_section2_elem2_parent">
+                    <div class="category_section2_elem2_child">
+                        <div class="tags_block" *ngFor="let item of tags">
+                            <app-tags [tagsInner]="item"></app-tags>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

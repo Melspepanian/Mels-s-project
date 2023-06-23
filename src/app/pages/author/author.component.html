@@ -1,0 +1,45 @@
+<section class="author">
+
+        <div class="container">
+            <div class="author_section1">
+                <div class="author_section_parrent">
+                    <div class="author_section_child">
+                        <img src="assets/images/author.png" alt="">
+                    </div>
+                    <div class="author_section_child1">
+                        <h2 class="author_section_child_title">Hey there, I’m Andrew Jonhson and welcome to my Blog</h2>
+                        <p class="author_section_child_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim
+                            nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.
+                        </p>
+                        <div class="author_section_child_icons_parrent">
+                            <div class="author_section_child_icons_child"><img src="assets/images/facebook.svg" alt="">
+                            </div>
+                            <div class="author_section_child_icons_child"><img src="assets/images/twitter.svg" alt=""></div>
+                            <div class="author_section_child_icons_child"><img src="assets/images/instagram.svg" alt="">
+                            </div>
+                            <div class="author_section_child_icons_child"><img src="assets/images/linkedIn.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="author_colorLine">
+                    <div class="author_color_line_child1"></div>
+                    <div class="author_color_line_child2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="author_section2">
+                <h2>My Posts</h2>
+                <div class="author_section2_parrent">
+                    <div class="all_posts_block" >
+                        <app-posts [postsInner]="item" *ngFor="let item of allPosts"></app-posts>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </section>
