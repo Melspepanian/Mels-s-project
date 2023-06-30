@@ -381,10 +381,7 @@
 }
 
 @media screen and (max-width:1200px) {
-        {
-        justify-content: space-around;
-    }
-
+      
     .second_section_second_parrent {
         padding-left: 30px;
     }
@@ -417,6 +414,8 @@
         padding-left: 60px;
         padding-right: 50px;
     }
+    
+
 }
 
 @media screen and (max-width:1000px) {
@@ -586,6 +585,7 @@
         margin-top: 20px;
         width: 70%;
     }
+  
 
     .footer_elem_2_child1 button {
         padding: 16px 36px

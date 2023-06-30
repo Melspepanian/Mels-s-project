@@ -376,7 +376,7 @@
     }
 
     .home_section6_child {
-        width: 50%;
+        width: 100%;
 
     }
 }
@@ -406,15 +406,28 @@
     .about_us_section1_1 h2 {
         font-size: 32px;
     }
+    .about_us_section1_2 p{
+        font-size: 16px;
+    }
+    .about_us_section1_1 h2{
+        font-size: 20px;
+        line-height: 40px;
+        padding-top: 10px;
+    }
 }
 
 @media screen and (max-width:380px) {
-    .about_us_section1_1 h2 {
-        font-size: 29px;
-        line-height: 43px;
+    .about_us_section1_1 h2{
+        font-size: 20px;
+        line-height: 40px;
+        padding-top: 10px;
     }
     .about_us_section_4_child1_2 img {
         height: 219px;
+    }
+    .about_us_section3_parrent[_ngcontent-ng-c1785132773] {
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .about_us_section1_2 p {
         font-size: 16px;

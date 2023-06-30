@@ -27,3 +27,16 @@
     line-height: 32px;
     color: #232536;
 }
+@media screen and (max-width:1100px){
+    .second_section_second_elem2_text{
+        font-size: 33px;
+        line-height: 41px;
+    }
+}
+
+@media screen and (max-width:380px){
+.second_section_second_elem2_text{
+    font-size: 17px;
+}
+}
+
