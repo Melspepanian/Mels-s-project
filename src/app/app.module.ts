@@ -24,6 +24,8 @@ import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.co
 import { PrivacyComponent } from './components/privacy/privacy.component';
 import { TagsComponent } from './components/tags/tags.component';
 import { HomePostsComponent } from './components/home-posts/home-posts.component';
+import { HttpClientModule } from '@angular/common/http';
+import { SecondPostComponent } from './components/second-post/second-post.component';
 
 
  
@@ -97,13 +99,15 @@ const route: Route[] = [
     PrivacyComponent,
     TagsComponent,
     HomePostsComponent,
+    SecondPostComponent,
     
     
  
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(route)
+    RouterModule.forRoot(route),
+    HttpClientModule
 
   ],
   providers: [],

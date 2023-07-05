@@ -1,11 +1,27 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Home_posts } from 'src/app/models/home_tags';
+
+import { RequestService } from 'src/app/services/request.service';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-home-posts',
   templateUrl: './home-posts.component.html',
   styleUrls: ['./home-posts.component.css']
 })
-export class HomePostsComponent {
-@Input() homeInner!:Home_posts
+export class HomePostsComponent implements OnInit {
+@Input() homeInner!:Home_posts;
+ url:string = environment.home.tags;
+ data: Home_posts[] = [
+ ]
+
+ constructor(public service: RequestService){
+
+ }
+ ngOnInit(): void {
+   this.service.getRequest<Home_posts[]>(this.url).subscribe((data) =>{
+    this.data = data
+    
+   })
+ }
 }

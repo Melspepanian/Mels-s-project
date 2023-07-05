@@ -23,7 +23,7 @@
             <div class="blog_section_2_parrent">
                 <div class="blog_section_2_child">
                     <div class="all_posts_block" >
-                        <app-posts [postsInner]="item" *ngFor="let item of posts"></app-posts>
+                        <app-posts  ></app-posts>
                     </div>
                 </div>
 
@@ -32,16 +32,18 @@
         </div>
     </div>
 </section>
-<section>
-    <div class="container">
-        <h2 class="section_4_title">Choose A Catagory</h2>
-        <div class="section_4_parrent">
-            <div class="category-block" *ngFor="let item of category">
-                <app-category [categoryInner]="item"></app-category>
 
-            </div>
+    <section>
+        <div class="container">
+            <h2 class="section_4_title">Choose A Catagory</h2>
+    
+    
+            <app-category></app-category>
+    
+    
+    
         </div>
-    </div>
+   
 </section>
 <section>
     <div class="container">

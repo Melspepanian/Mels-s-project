@@ -49,3 +49,9 @@
 .blog_post_section4_child > img{
     width: 405px;
 }
+.blog_post_section4_parrent {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 70px;
+    border-bottom: 1px solid #DEDED0;
+}

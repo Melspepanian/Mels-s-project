@@ -57,15 +57,7 @@
     justify-content: space-between;
 }
 
-.category-block {
-    border: 1px solid #D3D4D6;
-    padding: 30px 30px 35px;
-    margin-bottom: 120px;
-    margin-top: 60px;
-}
-.category-block:hover {
-    background-color: #FFD050;
-}
+
 
 .section_4_child_icon {
     width: 48px;

@@ -19,7 +19,15 @@
     line-height: 20px;
     color: #4C4C4C;
 }
+.home_postBlock{
+    margin-bottom: 20px;
+}
 
+.home_postBlock:hover {
+    background-color: lightyellow;
+    transform: scale(1s);
+
+}
 .second_section_second_elem2_text {
     font-size: 24px;
     font-family: Sen;

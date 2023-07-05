@@ -1,10 +1,12 @@
-<div class="posts_parrent">
-    <div class="blog_2_section_2_child_01">
-        <img src="{{postsInner.img}}" alt="">
-    </div>
-    <div class="blog_2_section_2_child_02">
-        <p class="blog_section_2_child_text1">{{postsInner.description}}</p>
-        <h3 class="blog_section_2_child_text2">{{postsInner.title}}</h3>
-        <p class="blog_section_2_child_text3">{{postsInner.paragraph}}</p>
+<div class="posts_block" *ngFor="let item of data">
+    <div class="posts_parrent">
+        <div class="blog_2_section_2_child_01">
+            <img src="{{item.img}}" alt="">
+        </div>
+        <div class="blog_2_section_2_child_02">
+            <p class="blog_section_2_child_text1">{{item.description}}</p>
+            <h3 class="blog_section_2_child_text2">{{item.title}}</h3>
+            <p class="blog_section_2_child_text3">{{item.paragraph}}</p>
+        </div>
     </div>
 </div>

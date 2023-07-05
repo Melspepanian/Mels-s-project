@@ -1,0 +1,12 @@
+.category-block {
+    margin-bottom: 20px;
+}
+.category-block {
+    border: 1px solid #D3D4D6;
+    padding: 30px 30px 35px;
+    margin-bottom: 120px;
+    margin-top: 60px;
+}
+.category-block:hover {
+    background-color: #FFD050;
+}

@@ -37,11 +37,11 @@
                     <p class="second_section_elems3">View All</p>
                 </div>
                 <div class="second_section_second_elem_2_2_1">
-                    <div class="home_postBlock" *ngFor = "let item of tags">
-                   <app-home-posts [homeInner] = "item"></app-home-posts>
+
+                    <app-home-posts></app-home-posts>
                 </div>
-                </div>
-               
+
+
             </div>
 
         </div>
@@ -86,12 +86,12 @@
 <section>
     <div class="container">
         <h2 class="section_4_title">Choose A Catagory</h2>
-        <div class="section_4_parrent">
-            <div class="category-block" *ngFor="let item of category">
-                <app-category [categoryInner]="item"></app-category>
 
-            </div>
-        </div>
+
+        <app-category></app-category>
+
+
+
     </div>
 </section>
 <section class="home_section_5">
@@ -118,12 +118,12 @@
         <div class="home_section_6">
             <h2 class="home_section_6_parrent_title">List of Authors</h2>
             <!-- <div class="home_section6_parrent"> -->
-            <div class="home_section6_child">
-                <div class="authors_block" *ngFor="let item of  authors">
 
-                    <app-authors [authorsInner]="item"></app-authors>
-                </div>
-            </div>
+
+
+            <app-authors></app-authors>
+
+
             <!-- </div> -->
         </div>
     </div>
@@ -178,5 +178,9 @@
     </div>
 </section>
 <section>
-    <app-join></app-join>
+    <div class="container">
+        <div class="section_9_elem">
+            <app-join></app-join>
+        </div>
+    </div>
 </section>

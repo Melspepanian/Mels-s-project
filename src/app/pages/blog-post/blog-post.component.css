@@ -175,12 +175,7 @@
     padding-top: 30px;
 }
 
-.blog_post_section4_parrent {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 70px;
-    border-bottom: 1px solid #DEDED0;
-}
+
 
 .blog_post_section4 {
     padding-bottom: 50px;

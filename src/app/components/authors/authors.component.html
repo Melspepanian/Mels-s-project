@@ -1,14 +1,18 @@
-<a routerLink="/layout/author">
-    <div>
-        <img src="{{authorsInner.img}}" alt="">
-        <h3>{{authorsInner.title}}</h3>
-        <p>{{authorsInner.paragraph}}</p>
-    </div>
-    <div class="item9">
-        <div *ngFor="let i of authorsInner.socials">
-            <div class="authors_list">
-                <img src="{{i}}" alt="">
+<div class="home_section6_child">
+    <div class="authors_block" *ngFor="let item of  data">
+        <a routerLink="/layout/author">
+            <div>
+                <img src="{{item.img}}" alt="">
+                <h3>{{item.title}}</h3>
+                <p>{{item.paragraph}}</p>
             </div>
-        </div>
+            <div class="item9">
+                <div *ngFor="let i  of data">
+                    <div class="authors_list">
+                        <img src="{{i.socials}}">
+                    </div>
+                </div>
+            </div>
+        </a>
     </div>
-</a>
+</div>

@@ -188,15 +188,7 @@
     padding: 30px 140px 40px 21px;
     width: 515px;
 }
-.home_postBlock{
-    margin-bottom: 20px;
-}
 
-.home_postBlock:hover {
-    background-color: lightyellow;
-    transform: scale(1s);
-
-}
 
 .colorLine1 {
     background-color: white;

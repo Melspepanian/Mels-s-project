@@ -11,43 +11,7 @@ import { Tags } from 'src/app/models/tags';
 })
 
 export class CategoryPageComponent {
-  posts: Posts[] = [
-    {
-      id: 1,
-      img: "assets/images/photo1687437433.jpeg",
-      description: "Startup",
-      title: "Top 6 free website mockup tools 2022",
-      paragraph: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur Excepteur sint occaecat cupidatat non proident."
-    },
-    {
-      id: 2,
-      img: "assets/images/photo1687437433.jpeg",
-      description: "Businnes",
-      title: "How to build rapport with your web design clients",
-      paragraph: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
-    },
-    {
-      id: 3,
-      img: "assets/images/photo1687437433.jpeg",
-      description: "Startup",
-      title: "Logo design trends to avoid in 2022",
-      paragraph: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
-    },
-    {
-      id: 4,
-      img: "assets/images/photo1687437433.jpeg",
-      description: "TECHNOLOGY",
-      title: "8 Figma design systems you can download for free today",
-      paragraph: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
-    },
-    {
-      id: 5,
-      img: "assets/images/photo1687437433.jpeg",
-      description: "ECONOMY",
-      title: "Font sizes in UI design: The complete guide to follow",
-      paragraph: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
-    },
-  ]
+
   sec_category: Sec_category[] = [
     {
       id:1,
