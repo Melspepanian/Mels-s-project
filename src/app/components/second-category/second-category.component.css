@@ -7,3 +7,16 @@
     letter-spacing: -1px;
     color: #232536;
 }
+.category_section2_child2_child {
+    width: 296px;
+    border: 1px solid #C1C1C3;
+    margin-top: 30px;
+}
+.category_section2_child2_child {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 110px 25px 23px;
+}
+.category_section2_child2_parent :hover {
+    background-color: #FFD050;
+  }

@@ -1,2 +1,6 @@
-<img src="{{secondCategoryInner.img}}" alt="this is a img">
-<p class="category_section2_child2_child_text">{{secondCategoryInner.paragraph}}</p>
+<div class="category_section2_child2_parent">
+    <div class="category_section2_child2_child" *ngFor="let item of  data">
+        <img src="{{item.img}}" alt="this is a img">
+        <p class="category_section2_child2_child_text">{{item.paragraph}}</p>
+    </div>
+</div>

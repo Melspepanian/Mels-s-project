@@ -205,5 +205,69 @@
       "title": "What did I learn from doing 50+ design sprints?",
       "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec."
     }
+  ],
+  "second_category": [
+    {
+      "id": 1,
+      "img": "assets/images/Component 4.png",
+      "paragraph": "Startup"
+    },
+    {
+      "id": 2,
+      "img": "assets/images/business-and-trade 1.png",
+      "paragraph": "Business"
+    },
+    {
+      "id": 3,
+      "img": "assets/images/business-and-trade 1 (1).png",
+      "paragraph": "Business"
+    },
+    {
+      "id": 4,
+      "img": "assets/images/business-and-trade 1 (2).png",
+      "paragraph": "Business"
+    }
+  ],
+  "tags": [
+    {
+      "id": 1,
+      "text": "Bussinnes"
+    },
+    {
+      "id": 2,
+      "text": "Experience"
+    },
+    {
+      "id": 3,
+      "text": "Screen"
+    },
+    {
+      "id": 4,
+      "text": "Technology"
+    },
+    {
+      "id": 5,
+      "text": "Marketing"
+    },
+    {
+      "id": 6,
+      "text": "Life"
+    }
+  ],
+  "authors_post": [
+    {
+      "id": 1,
+      "img": "assets/images/author2.png",
+      "description": "BUSINNES",
+      "title": "Font sizes in UI design: The complete guide to follow",
+      "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      "id": 2,
+      "img": "assets/images/author3.png",
+      "description": "ECONOMY",
+      "title": "How to build rapport with your web design clients",
+      "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    }
   ]
 }

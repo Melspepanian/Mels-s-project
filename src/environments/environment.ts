@@ -13,6 +13,12 @@ export const environment = {
         reads: host + "/reads"
     },
     category_page: {
-        second_post: host + "/second_post"
+        second_post: host + "/second_post",
+        second_category: host + "/second_category",
+        tags: host + "/tags"
+    },
+    author: {
+        authors_post:host + "/authors_post"
     }
+
 }

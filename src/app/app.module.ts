@@ -26,6 +26,8 @@ import { TagsComponent } from './components/tags/tags.component';
 import { HomePostsComponent } from './components/home-posts/home-posts.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SecondPostComponent } from './components/second-post/second-post.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { AuthorsPostComponent } from './components/authors-post/authors-post.component';
 
 
  
@@ -100,6 +102,7 @@ const route: Route[] = [
     TagsComponent,
     HomePostsComponent,
     SecondPostComponent,
+    AuthorsPostComponent,
     
     
  
@@ -107,7 +110,8 @@ const route: Route[] = [
   imports: [
     BrowserModule,
     RouterModule.forRoot(route),
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
 
   ],
   providers: [],

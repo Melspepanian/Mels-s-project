@@ -19,14 +19,14 @@
             </div>
         </div>
         <div class="contact_section_form">
-            <form method="get">
-                <input class = "input_style" type="text" name = "Name" placeholder = "Full Name">
-                <input class = "input_style1" type="email" name = "email address" placeholder = "Your Email">
-                <select  placeholder = "" class = "form_select">Query Related
+            <form  [formGroup]="form" >
+                <input class = "input_style" formControlName = "name" type="text" name = "Name" id = "name" placeholder = "Full Name">
+                <input class = "input_style1" formControlName = "email" type="email" name = "email address" id = "email" placeholder = "Your Email">
+                <select  formControlName = "select"  class = "form_select">Query Related
                     <option id = "form_select_style">Query Related</option>
                 </select>
-                <input type="text" class = "input_style2" name = "Message" placeholder="Message">
-                <button class = "form_button_style">Send Message</button>
+                <input type="text" formControlName = "message"  class = "input_style2" name = "Message" id ="message" placeholder="Message">
+                <button type="submit"  [disabled]="form.invalid" class = "form_button_style" (click) = "add()">Send Message</button>
             </form>
         </div>
     </div>

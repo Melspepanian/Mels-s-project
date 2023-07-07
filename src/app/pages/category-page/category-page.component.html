@@ -34,27 +34,23 @@
                 Categories
             </h3>
             <div class="category_childs_parrent">
-                <div class="category_section2_child2_parent">
-                    <div class="category_section2_child2_child" *ngFor="let item of  sec_category">
 
-                        <app-second-category class="app_second_class"
-                            [secondCategoryInner]="item"></app-second-category>
 
-                    </div>
-                </div>
+
+                <app-second-category></app-second-category>
+
+
+
             </div>
 
             <div class="category_section2_elem2">
                 <h3 class="category_section2_elem2_title">All Tags</h3>
                 <div class="category_section2_elem2_parent">
-                    <div class="category_section2_elem2_child">
-                        <div class="tags_block" *ngFor="let item of tags">
-                            <app-tags [tagsInner]="item"></app-tags>
-                        </div>
 
-                    </div>
-
+                    <app-tags></app-tags>
                 </div>
+
+
             </div>
         </div>
     </div>

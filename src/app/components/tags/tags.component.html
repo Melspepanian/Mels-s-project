@@ -1,4 +1,6 @@
-
-<div class="category_section2_elem2_child_1">
-    <a href="">{{tagsInner.text}}</a>
-</div>
+<div class="category_section2_elem2_child">
+    <div class="tags_block" *ngFor="let item of data">
+        <div class="category_section2_elem2_child_1">
+            <a href="">{{item.text}}</a>
+        </div>
+    </div>

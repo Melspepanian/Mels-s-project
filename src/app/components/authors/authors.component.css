@@ -1,5 +1,6 @@
 .authors_list {
     display: flex;
+    justify-content: space-between;
 }
 
 .item9 {
