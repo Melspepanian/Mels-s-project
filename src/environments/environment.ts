@@ -19,6 +19,9 @@ export const environment = {
     },
     author: {
         authors_post:host + "/authors_post"
+    },
+    about_us: {
+        know_post: host + "/know_post"
     }
 
 }

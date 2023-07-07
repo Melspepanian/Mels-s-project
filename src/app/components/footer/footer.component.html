@@ -25,9 +25,9 @@
                 <h2>Subscribe to our news letter to get latest updates and news</h2>
             </div>
             <div class="footer_elem_2_child1">
-                <form action="" method="get">
-                    <input type="text" name="text" placeholder="Enter Your Email">
-                    <button>Subscribe</button>
+                <form [formGroup] = "footerForm" method="get">
+                    <input formControlName = "email" type="text" name="text" placeholder="Enter Your Email">
+                    <button type="submit" [disabled] = "footerForm.invalid" (click) = "sendMail()">Subscribe</button>
                 </form>
             </div>
         </div>

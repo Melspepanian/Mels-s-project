@@ -1,11 +1,12 @@
 .authors_list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .item9 {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding-top: 30px;
 }
 
@@ -30,3 +31,20 @@ p {
     padding-top: 5px;
 
 }
+.item9 img {
+    padding-right: 20px;
+}
+.authors_block:hover{
+background-color: #FBf6ea;
+}
+.authors_block{
+width: 296px;
+padding: 40px 10px
+}
+@media screen and (max-width:1280px) {
+    
+    .home_section6_child{
+        justify-content: space-evenly;
+    }
+}
+

@@ -7,9 +7,11 @@
                 <p>{{item.paragraph}}</p>
             </div>
             <div class="item9">
-                <div *ngFor="let item  of data">
+                <div >
                     <div class="authors_list">
-                        <img src="{{item.socials}}">
+                        <a href="" *ngFor="let socItem of item.socials">
+                            <img src="{{socItem}}" alt="">
+                        </a>
                     </div>
                 </div>
             </div>

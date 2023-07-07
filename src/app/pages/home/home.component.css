@@ -737,7 +737,7 @@
 
 
     .section_3_elem1_child1_2 {
-        font-size: 28px;
+        font-size: 25px;
         line-height: 39px;
     }
 
@@ -772,8 +772,35 @@
     .secction_8_child_1 {
         width: 100%;
     }
+    .first_section_parrent[_ngcontent-ng-c3160018998] {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .first_section_last_text[_ngcontent-ng-c3160018998] {
+        font-size: 16px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .first_section_header[_ngcontent-ng-c3160018998] {
+        line-height: 30px;
+    }
     .section_8_child_title{
         font-size: 25px;
+    }
+    .section_5_elem_child2{
+        font-size: 22px;
+        line-height: 30px;
+        padding-top: 20px;
+    }
+    .home_section_8_parrent{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .section_8_child_3_elem2{
+        justify-content: center;
+    }
+    .section_8_child_3_elem2 {
+        font-size: 14px;
     }
 
 

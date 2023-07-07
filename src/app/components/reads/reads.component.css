@@ -54,4 +54,11 @@
     justify-content: space-between;
     padding-bottom: 70px;
     border-bottom: 1px solid #DEDED0;
+    flex-wrap: wrap;
+}
+@media screen and (max-width:1230px){
+    .blog_post_section4_parrent[_ngcontent-ng-c1818763036] {
+        justify-content: space-evenly;
+    }
+   
 }

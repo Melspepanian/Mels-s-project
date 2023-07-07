@@ -93,9 +93,9 @@
       ]
     },
     {
-      "id": 3,
-      "img": "../../../assets/images/section_6_3.png",
-      "title": "Floyd Mailes",
+      "id": 4,
+      "img": "../../../assets/images/section_6_4.png",
+      "title": "Leslie Alexander",
       "paragraph": "Content Writer @Company",
       "socials": [
         "../../../assets/images/facebook.svg",
@@ -268,6 +268,22 @@
       "description": "ECONOMY",
       "title": "How to build rapport with your web design clients",
       "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    }
+  ],
+  "know_post": [
+    {
+      "id":1,
+      "title": "Our team of creatives",
+      "second_title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+      "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.",
+      "img" : "assets/images/about2.png"
+    },
+    {
+      "id":2,
+      "title": "Why we started this Blog",
+      "second_title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+      "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.",
+      "img" : "assets/images/about3.png"
     }
   ]
 }

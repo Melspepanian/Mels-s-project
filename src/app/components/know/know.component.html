@@ -1,0 +1,11 @@
+<div class="about_us_section_4_parrent" >
+    <div class="about_us_section_4_child1" *ngFor="let item of data let i = index"
+    [ngStyle] = "{'flexDirection' : i % 2 !== 0 ? 'row-reverse' : 'row'}">
+        <div class="about_us_section_4_child1_1">
+            <h2>{{item.title}}</h2>
+            <h4>{{item.second_title}}</h4>
+            <p>{{item.paragraph}}</p>
+        </div>
+        <div class="about_us_section_4_child1_2"><img class ="about_us_section_4_child1_2_img" src="{{item.img}}"></div>
+    </div>
+</div>

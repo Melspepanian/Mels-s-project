@@ -10,3 +10,8 @@
 .category-block:hover {
     background-color: #FFD050;
 }
+@media screen and (max-width: 380px){
+    .category-block[_ngcontent-ng-c16961281] {
+        margin-bottom: 0;
+    }
+}

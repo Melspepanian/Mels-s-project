@@ -45,6 +45,8 @@
 @media screen and (max-width:380px){
 .second_section_second_elem2_text{
     font-size: 17px;
+    line-height: 20px;
+    padding-top: 20px;
 }
 }
 

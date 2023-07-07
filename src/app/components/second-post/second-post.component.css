@@ -46,3 +46,11 @@
     padding-top: 30px;
 
 }
+@media screen and (max-width:1000px){
+.author_section2_parrent[_ngcontent-ng-c2267464823] {
+    margin-top: 30px;
+    flex-direction: column;
+}
+}
+
+

@@ -28,6 +28,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { SecondPostComponent } from './components/second-post/second-post.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AuthorsPostComponent } from './components/authors-post/authors-post.component';
+import { KnowComponent } from './components/know/know.component';
 
 
  
@@ -103,6 +104,7 @@ const route: Route[] = [
     HomePostsComponent,
     SecondPostComponent,
     AuthorsPostComponent,
+    KnowComponent,
     
     
  
