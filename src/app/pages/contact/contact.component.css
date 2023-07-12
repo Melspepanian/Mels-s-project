@@ -147,7 +147,9 @@ select {
     margin-top: 30px;
     margin-bottom: 50px;
 }
-
+select{
+    appearance: none;
+}
 .form_button_style {
     width: 100%;
     background-color: #FFD050;
@@ -162,6 +164,10 @@ select {
     padding: 23px 0;
     border: none;
 }
+.form_button_style:hover{
+    background-color: #EDC14A;
+}
+
 
 @media screen and (max-width:790px) {
     .contact_section {

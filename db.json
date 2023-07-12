@@ -5,28 +5,60 @@
       "by": "By",
       "author": "John Doe  ",
       "date": "|  May 23, 2022",
-      "title": "8 Figma design systems that you can download for free today."
+      "title": "8 Figma design systems that you can download for free today.",
+      "img": "/assets/images/photo1689023869.jpeg",
+      "description": "Startup",
+      "paragraph": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+      "sec_title": "Design tips for designers that cover everything you need",
+      "description_icon": "/assets/images/Category label.png"
     },
     {
       "id": 2,
       "by": "By",
       "author": "John Doe  ",
       "date": "|  May 23, 2022",
-      "title": "8 Figma design systems that you can download for free today."
+      "title": "8 Figma design systems that you can download for free today.",
+      "img": "/assets/images/photo1689023869 (1).jpeg",
+      "description": "BUSINESS",
+      "paragraph": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+      "sec_title": "How to build rapport with your web design clients",
+      "description_icon": "/assets/images/Group 9203.png"
     },
     {
       "id": 3,
       "by": "By",
       "author": "John Doe  ",
       "date": "|  May 23, 2022",
-      "title": "8 Figma design systems that you can download for free today."
+      "title": "8 Figma design systems that you can download for free today.",
+      "img": "/assets/images/photo1689023869 (2).jpeg",
+      "description": "Startup",
+      "paragraph": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+      "sec_title": "Logo design trends to avoid in 2022",
+      "description_icon": "/assets/images/Category label.png"
     },
     {
       "id": 4,
       "by": "By",
       "author": "John Doe  ",
       "date": "|  May 23, 2022",
-      "title": "8 Figma design systems that you can download for free today."
+      "title": "8 Figma design systems that you can download for free today.",
+      "img": "/assets/images/pexels-fauxels-3182811.jpg",
+      "description": "TECHNOLOGY",
+      "paragraph": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+      "sec_title": "8 Figma design systems you can download for free today",
+      "description_icon": "/assets/images/Group 9205.png"
+    },
+    {
+      "id": 5,
+      "by": "By",
+      "author": "John Doe  ",
+      "date": "|  May 23, 2022",
+      "title": "8 Figma design systems that you can download for free today.",
+      "img": "/assets/images/photo1689023869.jpeg",
+      "description": "ECONOMY",
+      "paragraph": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+      "sec_title": "Font sizes in UI design: The complete guide to follow",
+      "description_icon": "/assets/images/Group 9204.png"
     }
   ],
   "category": [
@@ -66,7 +98,8 @@
         "assets/images/twitter.svg",
         "assets/images/instagram.svg",
         "../../../assets/images/linkedIn.png"
-      ]
+      ],
+      "sec_img": "assets/images/pexels-vazhnik-7562313 (1).jpg"
     },
     {
       "id": 2,
@@ -78,7 +111,8 @@
         "assets/images/twitter.svg",
         "assets/images/instagram.svg",
         "assets/images/linkedIn.png"
-      ]
+      ],
+      "sec_img": "assets/images/94c1db47acb8141c7502d8724bd28fbd.png"
     },
     {
       "id": 3,
@@ -90,7 +124,8 @@
         "assets/images/twitter.svg",
         "assets/images/instagram.svg",
         "../../../assets/images/linkedIn.png"
-      ]
+      ],
+      "sec_img": "assets/images/pexels-anastasia-shuraeva-5704849.jpg"
     },
     {
       "id": 4,
@@ -102,7 +137,60 @@
         "assets/images/twitter.svg",
         "assets/images/instagram.svg",
         "../../../assets/images/linkedIn.png"
-      ]
+      ],
+      "sec_img": "assets/images/pexels-tim-douglas-6205509.jpg"
+    },
+    {
+      "id": 5,
+      "img": "../../../assets/images/user10.png",
+      "title": "Guy Hawkins",
+      "paragraph": "Content Writer @Company",
+      "socials": [
+        "../../../assets/images/facebook.svg",
+        "assets/images/twitter.svg",
+        "assets/images/instagram.svg",
+        "../../../assets/images/linkedIn.png"
+      ],
+      "sec_img": "assets/images/8f3821cbdb774f4fd93dd85915717102.png"
+    },
+    {
+      "id": 6,
+      "img": "../../../assets/images/user6.png",
+      "title": "Eleanor Pena",
+      "paragraph": "Content Writer @Company",
+      "socials": [
+        "../../../assets/images/facebook.svg",
+        "assets/images/twitter.svg",
+        "assets/images/instagram.svg",
+        "../../../assets/images/linkedIn.png"
+      ],
+      "sec_img": "assets/images/photo1689010984.jpeg"
+    },
+    {
+      "id": 7,
+      "img": "../../../assets/images/user7.png",
+      "title": "Robert Fox",
+      "paragraph": "Content Writer @Company",
+      "socials": [
+        "../../../assets/images/facebook.svg",
+        "assets/images/twitter.svg",
+        "assets/images/instagram.svg",
+        "../../../assets/images/linkedIn.png"
+      ],
+      "sec_img": "assets/images/pexels-anna-shvets-5262459.jpg"
+    },
+    {
+      "id": 8,
+      "img": "../../../assets/images/user8.png",
+      "title": "Jacob Jones",
+      "paragraph": "Content Writer @Company",
+      "socials": [
+        "../../../assets/images/facebook.svg",
+        "assets/images/twitter.svg",
+        "assets/images/instagram.svg",
+        "../../../assets/images/linkedIn.png"
+      ],
+      "sec_img": "../../../assets/images/pexels-keira-burton-6147118.jpg"
     }
   ],
   "join": [
@@ -272,18 +360,79 @@
   ],
   "know_post": [
     {
-      "id":1,
+      "id": 1,
       "title": "Our team of creatives",
       "second_title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
       "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.",
-      "img" : "assets/images/about2.png"
+      "img": "assets/images/about2.png"
     },
     {
-      "id":2,
+      "id": 2,
       "title": "Why we started this Blog",
       "second_title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
       "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.",
-      "img" : "assets/images/about3.png"
+      "img": "assets/images/about3.png"
+    }
+  ],
+  "fotterEmail": [
+    {
+      "email": "melspepanayn@bk.ru",
+      "id": 1
+    },
+    {
+      "email": "melspepanayn@bk.ru",
+      "id": 2
+    },
+    {
+      "email": "Melspepanayn@bk.ru",
+      "id": 3
+    },
+    {
+      "email": "Melspepanayn@bk.ru",
+      "id": 4
+    },
+    {
+      "email": "Melspepanayn@bk.ru",
+      "id": 5
+    },
+    {
+      "email": "Melspepanayn@bk.ru",
+      "id": 6
+    },
+    {
+      "email": "Melspepanayn@bk.ru",
+      "id": 7
+    },
+    {
+      "email": "Melspepanayn@bk.ru",
+      "id": 8
+    },
+    {
+      "email": "Melspepanayn@bk.ru",
+      "id": 9
+    }
+  ],
+  "contact": [
+    {
+      "name": "Mels",
+      "email": "melspepanyan@bk.ru",
+      "message": "kujjkh",
+      "select": "Query Related",
+      "id": 1
+    },
+    {
+      "name": "Mels",
+      "email": "melspepanyan@mail.ru",
+      "message": "hello im a mels",
+      "select": "Query Related",
+      "id": 2
+    },
+    {
+      "name": "Vazan",
+      "email": "melspepanyan@mail.ru",
+      "message": "hello im a mels",
+      "select": "Query Related",
+      "id": 3
     }
   ]
 }

@@ -114,6 +114,10 @@
     padding-bottom: 30px;
 
 }
+.author_section_child img{
+    width: 270px;
+   
+}
 
 .author_section2_child_text1 {
     font-family: 'Inter';

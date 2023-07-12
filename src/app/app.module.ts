@@ -48,7 +48,7 @@ const route: Route[] = [
         component: BlogComponent
       },
       {
-        path: "blog_post",
+        path: "blog_post/:id",
         component: BlogPostComponent
       },
       {
@@ -57,7 +57,7 @@ const route: Route[] = [
       },
      
       {
-        path: "category_page",
+        path: "category_page/:id",
         component:CategoryPageComponent
       },
      
@@ -66,7 +66,7 @@ const route: Route[] = [
         component:ContactComponent
       },
       {
-        path:"author",
+        path:"author/:id",
         component:AuthorComponent
       },
       {

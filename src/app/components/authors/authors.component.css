@@ -34,13 +34,7 @@ p {
 .item9 img {
     padding-right: 20px;
 }
-.authors_block:hover{
-background-color: #FBf6ea;
-}
-.authors_block{
-width: 296px;
-padding: 40px 10px
-}
+
 @media screen and (max-width:1280px) {
     
     .home_section6_child{

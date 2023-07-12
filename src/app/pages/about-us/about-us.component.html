@@ -72,9 +72,9 @@
 </section>
 <section>
     <div class="container">
-        
-            <app-know></app-know>
-    
+
+        <app-know></app-know>
+
     </div>
 </section>
 <section>
@@ -83,14 +83,20 @@
             <h2 class="home_section_6_parrent_title">List of Authors</h2>
             <!-- <div class="home_section6_parrent"> -->
 
+            <div class="home_section6_child">
+                <a class="authors_block" *ngFor="let item of data" [routerLink]="['/layout/author', item.id]">
 
 
-            <app-authors></app-authors>
-
-
-            <!-- </div> -->
+                    <app-authors [authorsInner]="item"></app-authors>
+                </a>
+            </div>
         </div>
+
+
+
+        <!-- </div> -->
     </div>
+
 </section>
 <section>
     <div class="container">

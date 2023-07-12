@@ -22,6 +22,12 @@ export const environment = {
     },
     about_us: {
         know_post: host + "/know_post"
+    },
+    fotter: {
+        footer:host + "/fotterEmail"
+    },
+    contact: {
+        contact:host + "/contact"
     }
 
 }

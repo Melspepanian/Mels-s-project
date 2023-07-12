@@ -260,17 +260,28 @@
 
 
 }
+input {
+    font-size: 20px;
+    font-family: "Sen";
+}
+.authors_block:hover{
+    background-color: #FBf6ea;
+    }
+    .authors_block{
+    width: 300px;
+    padding: 40px 10px
+    }
 
 .footer_elem_2_child1 input {
     width: 323px;
     height: 56px;
     background-color: #2E3040;
     border: 1px solid #4C4C4C;
+    padding-left: 20px;
+    color: white;
 }
 
-.footer_elem_2_child1 input::placeholder {
-    padding-left: 20px;
-}
+
 
 .footer_elem_2_child1 button {
     background-color: #FFD050;

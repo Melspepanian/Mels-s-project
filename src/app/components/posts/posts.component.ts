@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ActivatedRoute, Route, Router } from '@angular/router';
+import { Home_posts } from 'src/app/models/home_tags';
 import { Posts } from 'src/app/models/posts';
 import { RequestService } from 'src/app/services/request.service';
 import { environment } from 'src/environments/environment';
@@ -10,13 +12,14 @@ import { environment } from 'src/environments/environment';
 })
 export class PostsComponent implements OnInit {
   @Input() postsInner!: Posts;
-  url: string = environment.blog.posts;
-  data: Posts[] = [];
-  constructor(public service: RequestService){
+  url: string = environment.home.tags;
+  data: Home_posts[] = [];
+  id: number = +this.activeRouter.snapshot.params['id']
+  constructor(public service: RequestService, private router: Router, public activeRouter: ActivatedRoute){
 
   }
   ngOnInit(): void {
-    this.service.getRequest<Posts[]>(this.url).subscribe((data) =>{
+    this.service.getRequest<Home_posts[]>(this.url).subscribe((data) =>{
       this.data = data
     })
   }

@@ -4,4 +4,6 @@ export interface Authors {
     title:string;
     paragraph:string;
     socials: string[];
+    sec_img?: string;
+    author_name?:string
 }

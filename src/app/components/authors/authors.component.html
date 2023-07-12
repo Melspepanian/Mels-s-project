@@ -1,20 +1,18 @@
-<div class="home_section6_child">
-    <div class="authors_block" *ngFor="let item of  data">
-        <a routerLink="/layout/author">
+
+      
             <div>
-                <img src="{{item.img}}" alt="">
-                <h3>{{item.title}}</h3>
-                <p>{{item.paragraph}}</p>
+                <img src="{{authorsInner.img}}" alt="">
+                <h3>{{authorsInner.title}}</h3>
+                <p>{{authorsInner.paragraph}}</p>
             </div>
             <div class="item9">
                 <div >
                     <div class="authors_list">
-                        <a href="" *ngFor="let socItem of item.socials">
+                        <a href="" *ngFor="let socItem of authorsInner.socials">
                             <img src="{{socItem}}" alt="">
                         </a>
                     </div>
                 </div>
             </div>
-        </a>
-    </div>
-</div>
+        
+    

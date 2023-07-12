@@ -10,17 +10,18 @@ import { environment } from 'src/environments/environment';
   styleUrls: ['./home-posts.component.css']
 })
 export class HomePostsComponent implements OnInit {
-@Input() homeInner!:Home_posts;
+  @Input() homeInner!:Home_posts;
  url:string = environment.home.tags;
  data: Home_posts[] = [
  ]
 
- constructor(public service: RequestService){
+ constructor(public service: RequestService, ){
 
  }
  ngOnInit(): void {
-   this.service.getRequest<Home_posts[]>(this.url).subscribe((data) =>{
+   this.service.getRequest<Home_posts[]>(this.url + '?_limit=4').subscribe((data) =>{
     this.data = data
+   
     
    })
  }
