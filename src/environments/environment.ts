@@ -28,6 +28,9 @@ export const environment = {
     },
     contact: {
         contact:host + "/contact"
+    },
+    admin: {
+        admin:host + "/admin"
     }
 
 }

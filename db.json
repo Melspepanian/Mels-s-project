@@ -10,7 +10,8 @@
       "description": "Startup",
       "paragraph": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
       "sec_title": "Design tips for designers that cover everything you need",
-      "description_icon": "/assets/images/Category label.png"
+      "description_icon": "/assets/images/shuttle.png",
+      "description_title": "Startup"
     },
     {
       "id": 2,
@@ -22,7 +23,8 @@
       "description": "BUSINESS",
       "paragraph": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
       "sec_title": "How to build rapport with your web design clients",
-      "description_icon": "/assets/images/Group 9203.png"
+      "description_icon": "/assets/images/Icon.png",
+      "description_title": "Business"
     },
     {
       "id": 3,
@@ -34,7 +36,8 @@
       "description": "Startup",
       "paragraph": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
       "sec_title": "Logo design trends to avoid in 2022",
-      "description_icon": "/assets/images/Category label.png"
+      "description_icon": "/assets/images/shuttle.png",
+      "description_title": "Startup"
     },
     {
       "id": 4,
@@ -46,7 +49,8 @@
       "description": "TECHNOLOGY",
       "paragraph": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
       "sec_title": "8 Figma design systems you can download for free today",
-      "description_icon": "/assets/images/Group 9205.png"
+      "description_icon": "/assets/images/cyborg.png",
+      "description_title": "Technology"
     },
     {
       "id": 5,
@@ -58,7 +62,8 @@
       "description": "ECONOMY",
       "paragraph": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
       "sec_title": "Font sizes in UI design: The complete guide to follow",
-      "description_icon": "/assets/images/Group 9204.png"
+      "description_icon": "/assets/images/icon (3).png",
+      "description_title": "Economy"
     }
   ],
   "category": [
@@ -382,35 +387,8 @@
     {
       "email": "melspepanayn@bk.ru",
       "id": 2
-    },
-    {
-      "email": "Melspepanayn@bk.ru",
-      "id": 3
-    },
-    {
-      "email": "Melspepanayn@bk.ru",
-      "id": 4
-    },
-    {
-      "email": "Melspepanayn@bk.ru",
-      "id": 5
-    },
-    {
-      "email": "Melspepanayn@bk.ru",
-      "id": 6
-    },
-    {
-      "email": "Melspepanayn@bk.ru",
-      "id": 7
-    },
-    {
-      "email": "Melspepanayn@bk.ru",
-      "id": 8
-    },
-    {
-      "email": "Melspepanayn@bk.ru",
-      "id": 9
     }
+   
   ],
   "contact": [
     {
@@ -433,6 +411,12 @@
       "message": "hello im a mels",
       "select": "Query Related",
       "id": 3
+    }
+  ],
+  "admin":[
+    {
+      "name":"mels_pepanyan",
+      "password": "melspepanyan.123"
     }
   ]
 }

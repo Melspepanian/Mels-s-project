@@ -1,0 +1,110 @@
+.example-container mat-form-field+mat-form-field {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+   
+
+}
+
+.example-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* filter: brightness(0); */
+
+}
+.mat-mdc-button:not(:disabled) {
+    background-color: #ffcc00;
+}
+
+
+
+.example-container mat-form-field+mat-form-field div {
+    width: 100%;
+    text-align: center;
+}
+
+.mat-mdc-text-field-wrapper {
+    width: 400px;
+}
+mat-label::placeholder{
+color: black;
+}
+
+.login_page_background {
+    background-image: url(../../../assets/images/hol4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+    /* background-position-y: -275px; */
+
+
+}
+.name_input img {
+    background-color: black
+}
+.login_page_title{
+    color:black;
+    font-family: 'Inter';
+    font-size: 30px;
+    background-color: #ffcc00;
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+    width: 32.7%;
+    font-weight: 300;
+}
+.login_page_style{
+    background-color: black;
+    border: 2px solid gray;
+    padding: 50px;
+}
+
+/* .login_page_background::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5); */
+/* } */
+
+
+.mat-mdc-form-field:not(.mat-form-field-no-animations) .mdc-text-field__input {}
+
+
+
+input.example-right-align::-webkit-outer-spin-button,
+input.example-right-align::-webkit-inner-spin-button {
+    display: none;
+}
+
+input.example-right-align {
+    -moz-appearance: textfield;
+}
+.mat-mdc-text-field-wrapper:not(.mdc-text-field--outlined) .mat-mdc-form-field-infix {
+    padding-top: 16px;
+    padding-bottom: 8px;
+}
+.mat-mdc-form-field {
+    width: 400px;
+}
+
+.example-label {
+    display: table-cell;
+    font-size: 14px;
+    margin-left: 8px;
+    min-width: 120px;
+  }
+  .mat-mdc-text-field-wrapper:not(.mdc-text-field--outlined) .mat-mdc-form-field-infix {
+    padding-top: 16px;
+    padding-bottom: 8px;
+}

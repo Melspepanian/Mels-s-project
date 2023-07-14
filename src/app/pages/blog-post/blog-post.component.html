@@ -11,7 +11,10 @@
                 </div>
             </div>
             <h2 class="blog_post_section_title">{{data[id].sec_title}}</h2>
-            <img src="{{data[id].description_icon}}" alt="">
+            <div class="description_element">
+                <img src="{{data[id].description_icon}}" alt="">
+                <p>{{data[id].description_title}}</p>
+            </div>
         </div>
     </div>
 </section>
@@ -71,12 +74,12 @@
     <div class="container">
         <div class="blog_post_section4">
             <h2 class="blog_post_section4_title">What to read next</h2>
-            
 
-                <app-reads></app-reads>
-            </div>
+
+            <app-reads></app-reads>
         </div>
-    
+    </div>
+
 
 
 </section>

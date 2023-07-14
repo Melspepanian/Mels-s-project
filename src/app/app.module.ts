@@ -29,9 +29,18 @@ import { SecondPostComponent } from './components/second-post/second-post.compon
 import { ReactiveFormsModule } from '@angular/forms';
 import { AuthorsPostComponent } from './components/authors-post/authors-post.component';
 import { KnowComponent } from './components/know/know.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LoginPageComponent } from './pages/login-page/login-page.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatDividerModule } from '@angular/material/divider';
 
 
- 
+
+
+
 
 
 const route: Route[] = [
@@ -55,26 +64,34 @@ const route: Route[] = [
         path: "about_us",
         component: AboutUsComponent
       },
-     
+
       {
         path: "category_page/:id",
-        component:CategoryPageComponent
+        component: CategoryPageComponent
       },
-     
+
       {
         path: "contact",
-        component:ContactComponent
+        component: ContactComponent
       },
       {
-        path:"author/:id",
-        component:AuthorComponent
+        path: "author/:id",
+        component: AuthorComponent
       },
       {
         path: "privacy_policy",
-        component:PrivacyPolicyComponent
-      }
-    ]
+        component: PrivacyPolicyComponent
+      },
+
+    ],
+
+  },
+  {
+    path: "login-page",
+    component: LoginPageComponent
   }
+
+
 ]
 
 
@@ -105,15 +122,24 @@ const route: Route[] = [
     SecondPostComponent,
     AuthorsPostComponent,
     KnowComponent,
-    
-    
- 
+    LoginPageComponent,
+
+
+
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(route),
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatButtonModule,
+    MatIconModule,
+    MatButtonModule,
+    MatDividerModule,
+    MatIconModule
 
   ],
   providers: [],

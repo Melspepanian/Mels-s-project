@@ -1,0 +1,31 @@
+<form action="" [formGroup]="form">
+    <div class="login_page_background">
+
+        <div class="example-container">
+            <h2 class="login_page_title">Admin Page</h2>
+            <div class="login_page_style">
+                <div class="name_input">
+                   
+                    <mat-form-field floatLabel="always">
+                        <mat-label>Your NickName</mat-label>
+                        <input matInput type="text" id="name" formControlName="name" class="example-right-align"
+                            placeholder="">
+                    </mat-form-field>
+                </div>
+                <mat-form-field>
+                    <mat-label>Enter your password</mat-label>
+                    <input matInput [type]="hide ? 'password' : 'text'" formControlName="password">
+                    <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                        [attr.aria-pressed]="hide">
+                        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                    </button>
+                </mat-form-field>
+
+
+                <div class="example-button-row">
+                    <button (click)="send()" mat-button>Sign In</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

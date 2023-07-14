@@ -9,5 +9,6 @@ export interface Home_posts{
     paragraph?:string;
     sec_title?:string;
     description_icon:string;
+    description_title:string;
 
 }
