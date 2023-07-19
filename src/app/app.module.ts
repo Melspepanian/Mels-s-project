@@ -36,6 +36,12 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatSelectModule } from '@angular/material/select';
+import { MatTreeModule} from '@angular/material/tree';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { AdminPanelComponent } from './pages/admin-panel/admin-panel.component';
+import { AdminMainComponent } from './pages/admin-panel/admin-main/admin-main.component';
+import { CategoryTableComponent } from './pages/admin-panel/admin components/category-table/category-table.component';
 
 
 
@@ -89,7 +95,18 @@ const route: Route[] = [
   {
     path: "login-page",
     component: LoginPageComponent
+  },
+  {
+    path: "admin-panel",
+    component: AdminPanelComponent,
+    children:[
+      {
+      path: "category-table",
+      component: CategoryTableComponent
+      }
+    ]
   }
+
 
 
 ]
@@ -123,6 +140,10 @@ const route: Route[] = [
     AuthorsPostComponent,
     KnowComponent,
     LoginPageComponent,
+    AdminPanelComponent,
+    AdminMainComponent,
+    CategoryTableComponent
+
 
 
 
@@ -139,6 +160,13 @@ const route: Route[] = [
     MatIconModule,
     MatButtonModule,
     MatDividerModule,
+    MatIconModule,
+    MatSidenavModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    MatButtonModule,
+    MatTreeModule,
+    MatButtonModule,
     MatIconModule
 
   ],

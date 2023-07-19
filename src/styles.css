@@ -348,6 +348,13 @@ input {
     overflow-y: scroll;
 }
 
+.mat-drawer-inner-container::-webkit-scrollbar{
+    display: none;
+}
+
+/* Components style */
+
+
 @media screen and (max-width:1280px) {
     .header_parrent {
         padding-left: 50px;
@@ -471,9 +478,7 @@ input {
         flex-wrap: wrap;
     }
 
-        {
-        flex-wrap: wrap;
-    }
+    
 
     .home_section6_child {
         margin-top: 20px

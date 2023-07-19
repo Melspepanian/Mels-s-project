@@ -1,0 +1,40 @@
+<div class="parrent">
+    <table>
+        <thead>
+           
+                <th>Image</th>
+                <th class="title_style">Title</th>
+                <th>Paragraph</th>
+                <th>Action</th>
+            
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of data">
+                <td>
+                    <img src="{{item.img}}" alt="">
+                </td>
+                <td class="category_title">
+                    {{item.title}}
+                </td>
+                <td>
+                    {{item.paragraph}}
+                </td>
+                <td>
+                    <button (click)="delete(item.id)" class = "first_button">Delete</button>
+                    <button (click) = "edit(item.id)" class = "second_button">Edit</button>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
+<div class = "input_style" [ngStyle] = "{'display' : isTrue ? 'flex' : 'none'}">
+    <form action="">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+    </form>
+</div>
