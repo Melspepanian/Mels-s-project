@@ -7,7 +7,7 @@
 }
 
 .example-container {
-    width: 100%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,7 +17,7 @@
 
 }
 .mat-mdc-button:not(:disabled) {
-    background-color: #ffcc00;
+    background-color: #BEBBB9;
 }
 
 
@@ -35,33 +35,52 @@ color: black;
 }
 
 .login_page_background {
-    background-image: url(../../../assets/images/hol4.jpg);
+    background-image: url(/assets/images/rrt1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
     position: relative;
+    display: flex;
+    align-items: center;
+    
     /* background-position-y: -275px; */
 
 
+}
+.logo_png{
+    
+}
+.first_element{
+    width: 50%;
+    /* background-color: black */
+    margin: auto;
+    text-align: center;
+    
 }
 .name_input img {
     background-color: black
 }
 .login_page_title{
-    color:black;
+    color: #BEBBB9;
     font-family: 'Inter';
     font-size: 30px;
-    background-color: #ffcc00;
+    /* background-color: #FAFBFF; */
     padding: 10px;
     text-align: center;
     margin: 0;
     width: 32.7%;
     font-weight: 300;
+    width: 100%;
+    margin-bottom: 20px;
 }
 .login_page_style{
-    background-color: black;
-    border: 2px solid gray;
+    background-color: #2f2f2eb5;
+    /* border: 2px solid gray; */
     padding: 50px;
+    border-radius: 20px;
+}
+.mdc-text-field--filled{
+    background-color: #BEBBB9;
 }
 
 /* .login_page_background::before {

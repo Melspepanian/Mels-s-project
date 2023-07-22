@@ -55,6 +55,7 @@
 .section_4_parrent {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 
@@ -363,6 +364,7 @@ input {
 
     .section_4_parrent {
         justify-content: space-around;
+        
     }
 
     .home_section6_child {

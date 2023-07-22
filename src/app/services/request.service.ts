@@ -17,4 +17,8 @@ export class RequestService {
   delete(url:string){
     return this.http.delete(url)
   }
+  put(url:string, value: Object){
+    let header = new HttpHeaders({'Content-type': 'application/json'})
+    return this.http.put( url, value, {headers: header})
+  }
 }

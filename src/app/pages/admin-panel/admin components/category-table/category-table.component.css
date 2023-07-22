@@ -33,7 +33,7 @@ table {
 
 .first_button {
     background-color: #FFC5C5;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 5px;
     font-size: 16px;
     border: 1px solid #DF0404;
@@ -41,7 +41,7 @@ table {
 }
 
 .second_button {
-    border-radius: 20px;
+    border-radius: 10px;
     border: 1px solid #00B087;
     background: rgba(22, 192, 152, 0.38);
     color: #008767;
@@ -55,29 +55,128 @@ table {
     padding: 5px;
     margin-left: 10px;
 }
-.input_style{
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #fdfdfd2b;
-  display: flex;
-  align-items: center;
-  
-    
+
+button {
+    cursor: pointer;
 }
-form{
+
+.input_style {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(0 0 0 / 69%);
     display: flex;
-    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.category_title {
+    color: #292D32;
+    font-family: "sen";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.00875rem;
+}
+
+form {
+    display: flex;
+    /* flex-direction: column; */
     width: 50%;
     margin: auto;
+    background-color: white;
+
+    border-radius: 20px;
 }
-input{
+
+input {
     margin-bottom: 20px;
     padding: 10px;
     border-radius: 20px;
     border: 2px solid #00B087;
-    background-color: #fdfdfda3;
+    background-color: #fdfdfd;
     outline: none;
+    width: 100%;
+    margin-top: 8px;
+}
+
+.form_parrent_elem {
+    padding: 50px;
+    padding-right: 20px;
+}
+
+.close_icon {
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.save_button {
+    border-radius: 10px;
+    border: 1px solid #00B087;
+    background: white;
+    color: #008767;
+    font-family: 'sen';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.00875rem;
+    padding: 10px;
+    /* margin-left: 10px; */
+    margin-right: 10px;
+
+}
+
+.save_button:hover {
+    background: rgba(22, 192, 152, 0.38);
+    cursor: pointer;
+}
+
+label {
+    color: #292D32;
+    font-family: "sen";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.00875rem;
+
+}
+
+.new_click {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+
+.new_click button {
+    border-radius: 10px;
+    border: 1px solid #00B087;
+    background: white;
+    color: #008767;
+    font-family: 'sen';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.00875rem;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.new_click button:hover {
+    background: rgba(22, 192, 152, 0.38);
+    cursor: pointer;
+    /* color: #008767; */
+}
+.svgXmark{
+    cursor: pointer;
+    fill: #008767;
+}
+tr{
+    margin-bottom: 10px;
 }

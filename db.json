@@ -69,8 +69,8 @@
   "category": [
     {
       "id": 1,
-      "img": "../../../assets/images/business-and-trade 1.png",
-      "title": "Bussines",
+      "img": "assets/images/business-and-trade 1.png",
+      "title": "Businnes",
       "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,"
     },
     {
@@ -90,6 +90,12 @@
       "img": "../../../assets/images/business-and-trade 1 (2).png",
       "title": "Technology",
       "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,"
+    },
+    {
+      "img": "assets/images/cyborg.png",
+      "title": "Technology",
+      "paragraph": "Hello World",
+      "id": 5
     }
   ],
   "authors": [
@@ -388,7 +394,6 @@
       "email": "melspepanayn@bk.ru",
       "id": 2
     }
-   
   ],
   "contact": [
     {
@@ -413,9 +418,9 @@
       "id": 3
     }
   ],
-  "admin":[
+  "admin": [
     {
-      "name":"mels_pepanyan",
+      "name": "mels_pepanyan",
       "password": "melspepanyan.123"
     }
   ]

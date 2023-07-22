@@ -82,6 +82,10 @@ mat-drawer-content::-webkit-scrollbar {
 .all_posts_parrent a {
     display: block;
 }
+/* .all_posts_component>a:hover{
+    color: #008767;
+
+} */
 
 .mat-drawer-container {
     background-color: white;

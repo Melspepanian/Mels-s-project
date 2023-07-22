@@ -17,7 +17,6 @@ export class AdminMainComponent implements OnInit {
   ngOnInit(): void {
     this.service.getRequest<Category[]>(this.url).subscribe((data) => {
       this.data = data;
-      console.log(this.data.length);
      this.service.getRequest<Authors[]>(this.sec_url).subscribe((sec_data)=>{
       this.sec_data = sec_data;
       
