@@ -92,9 +92,9 @@
       "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,"
     },
     {
-      "img": "assets/images/cyborg.png",
-      "title": "Technology",
-      "paragraph": "Hello World",
+      "img": "../../../assets/images/business-and-trade 1 (2).png",
+      "title": "MELS",
+      "paragraph": "PEPANYAN",
       "id": 5
     }
   ],

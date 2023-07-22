@@ -53,7 +53,7 @@
                 </div>
                 <mat-form-field>
                     <mat-label>Enter your password</mat-label>
-                    <input matInput [type]="hide ? 'password' : 'text'" formControlName="password">
+                    <input matInput [type]="hide ? 'password' : 'text'"  formControlName="password">
                     <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
                         [attr.aria-pressed]="hide">
                         <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
@@ -62,7 +62,7 @@
 
 
                 <div class="example-button-row">
-                    <button (click)="send()" mat-button>Sign In</button>
+                    <button (click)="send()" mat-button routerLink="/admin-panel">Sign In</button>
                 </div>
             </div>
         </div>

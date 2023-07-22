@@ -37,7 +37,7 @@
 
 <div class="input_style" [ngStyle]="{'display' : isTrue ? 'flex' : 'none'}">
 
-    <form action="" [formGroup]="form" (ngSubmit)="save(item.id)">
+    <form action="" [formGroup]="form" (ngSubmit)="save(item?.id)">
         <div class="form_parrent_elem">
             <label for="image">Image Address</label>
             <input type="text" formControlName="img" id="image">
@@ -46,7 +46,7 @@
             <label for="paragraph">Paragraph</label>
             <input type="text" formControlName="paragraph" id="paragraph">
             <button class="save_button">Save</button>
-            <button class = "save_button" (click) = "newComponent()"> Add Component</button>
+         
         </div>
         <div class="close_icon">
             <!-- <img src="assets/images/icons8-close-window-50.png" alt=""> -->
