@@ -68,10 +68,10 @@
   ],
   "category": [
     {
-      "id": 1,
       "img": "assets/images/business-and-trade 1.png",
-      "title": "Businnes",
-      "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,"
+      "title": "Business",
+      "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+      "id": 1
     },
     {
       "id": 2,
@@ -90,12 +90,6 @@
       "img": "../../../assets/images/business-and-trade 1 (2).png",
       "title": "Technology",
       "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,"
-    },
-    {
-      "img": "../../../assets/images/business-and-trade 1 (2).png",
-      "title": "MELS",
-      "paragraph": "PEPANYAN",
-      "id": 5
     }
   ],
   "authors": [

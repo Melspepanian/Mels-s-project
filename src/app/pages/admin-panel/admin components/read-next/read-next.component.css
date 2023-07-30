@@ -16,9 +16,18 @@ th {
     letter-spacing: -0.00875rem;
     text-align: center;
 }
+.read_next_image{
+    width: 200px;
+    margin-top: 50px;
+}
 
 tr {
     text-align: center;
+   
+}
+.form_parrent_elem[_ngcontent-ng-c423118251] {
+    padding: 10px;
+    padding-right: 20px;
 }
 
 /* thead {
@@ -83,7 +92,7 @@ button {
     font-weight: 800;
     line-height: normal;
     letter-spacing: -0.00875rem;
-    text-align: center;
+    width: 250px;
 }
 
 form {
@@ -214,7 +223,7 @@ tr {
 
 .div_elem_close_icon {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .delete_buttons_parrent_stile {
@@ -265,5 +274,45 @@ tr {
     letter-spacing: -0.00875rem;
 }
 .authors_sec_img img{
-    width: 50px;
+    width: 30px;
+}
+.author_table_img {
+    padding-left: 5px;
+}
+.all-posts-sec-img{
+    width: 100px;
+}
+.all-posts_paragraph{
+    width: 300px;
+    color: #292D32;
+    font-family: "sen";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.00875rem;
+    padding-bottom: 20px;
+
+   
+}
+.all-posts_paragraph2{
+    width: 320px;
+    color: #292D32;
+    font-family: "sen";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.00875rem;
+  
+}
+.all-posts_paragraph3{
+    width: 100px;
+    color: #292D32;
+    font-family: "sen";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.00875rem;
 }

@@ -7,9 +7,14 @@
         <thead>
 
             <th class="title_style">Image</th>
-            <th class="title_style">Title</th>
-            <th class="title_style">Paragraph</th>
+            <th class="title_style">Second Image</th>
+            <th class="title_style">Author Name</th>
+            <th class="title_style">Description</th>
+            <th class="title_style">social media </th>
             <th class="title_style">Action</th>
+            
+
+
 
         </thead>
         <tbody>
@@ -17,12 +22,18 @@
                 <td>
                     <img src="{{item.img}}" alt="">
                 </td>
-                <td >
-                    <textarea  class="category_title" name="" id="" cols="" rows="1">{{item.title}}</textarea>
-               
+                <td class="authors_sec_img">
+                    <img src="{{item.sec_img}}" alt="">
                 </td>
-                <td >
-                    <textarea class="category_title" name="" id="" cols="" rows="0">{{item.paragraph}}</textarea>
+                <td class="category_title">
+                    {{item.title}}
+                </td>
+                <td class="category_title">
+                    {{item.paragraph}}
+                </td>
+                    
+                <td class="category_title">
+                    <img class ="author_table_img" *ngFor="let socialsItem of item.socials" src="{{socialsItem}}" alt="">
                 </td>
                 <td>
                     <button (click)="delete(item)" class="first_button">Delete</button>
@@ -42,12 +53,16 @@
         <div class="form_parrent_elem">
             <label for="image">Image Address</label>
             <input type="text" formControlName="img" id="image">
-            <label for="title">Title</label>
+            <label for="second_image">Second Image Adress</label>
+            <input type="text" formControlName="sec_img">
+            <label for="title">Author Name</label>
             <input type="text" formControlName="title" id="title">
-            <label for="paragraph">Paragraph</label>
+            <label for="paragraph">Description</label>
             <input type="text" formControlName="paragraph" id="paragraph">
+            <label for="socials">Social Media</label>
+            <input type="text" formControlName = "socials" id = "socials">
             <button class="save_button">Save</button>
-            
+
         </div>
         <div class="close_icon">
 

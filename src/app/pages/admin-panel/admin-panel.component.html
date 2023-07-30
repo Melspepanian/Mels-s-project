@@ -41,77 +41,88 @@
         <img src="assets/images/logo_transparent__2_-removebg.png" alt="">
 
     </div>
-    <div class="page_author">
-        <img src="assets/images/bxipJl-bPl0 (2).jpg" alt="">
-        <div class="page_author_1">
-            <h2>Mels</h2>
-            <h3>Page Admin</h3>
+    <div>
+        <div class="page_author" (click)="showLogOut()">
+            <img src="assets/images/bxipJl-bPl0 (2).jpg" alt="">
+            <div class="page_author_1">
+                <h2>Mels</h2>
+                <h3>Page Admin</h3>
+            </div>
+        </div>
+        <div class="log_out" #logout>
+            <a  routerLink="/login-page">
+
+                <img src="assets/images/exit.png" alt="">
+                <p>Log Out</p>
+            </a>
+
         </div>
     </div>
+
 </div>
 
 <mat-drawer-container class="example-container">
-   
-        <mat-drawer #drawer class="mat-drawer_style" [mode]="mode.value">
 
-            <div class="all_posts_parrent">
+    <mat-drawer #drawer class="mat-drawer_style" [mode]="mode.value">
 
-                <a href="" class="all-posts-component">
-                    <img src="assets/images/book-font.png" alt="">
-                    All Posts
-                </a>
-            </div>
-            <div class="all_posts_parrent">
+        <div class="all_posts_parrent">
 
-                <a routerLink = "category-table" class="all-posts-component">
-                    <img src="assets/images/360073436_991192385406720_7759292297095689224_n.png" alt="">
-                    Category</a>
-            </div>
-            <div class="all_posts_parrent">
+            <a routerLink="all-posts" class="all-posts-component">
+                <img src="assets/images/book-font.png" alt="">
+                All Posts
+            </a>
+        </div>
+        <div class="all_posts_parrent">
 
-                <a href="" class="all-posts-component">
-                    <img src="assets/images/user (1).png" alt="">
-                    Authors</a>
-            </div>
-            <div class="all_posts_parrent">
-                <a href="" class="all-posts-component">
-                    <img src="assets/images/book-user.png" alt="">
-                    Read Next</a>
-            </div>
-            <div class="all_posts_parrent">
-                <a href="" class="all-posts-component">
-                    <img src="assets/images/361036584_797879401810992_736683082343296164_n.png" alt="">
-                    Know More</a>
-            </div>
-            <div class="all_posts_parrent">
-                <a href="" class="all-posts-component">
-                    <img src="assets/images/361078607_271242122327358_1493203648994066059_n.png" alt="">
-                    Category All Posts</a>
-            </div>
-            <div class="all_posts_parrent">
-                <a href="" class="all-posts-component">
-                    <img src="assets/images/361114965_274653755213827_2295278680230394208_n.png" alt="">
-                    Min Category</a>
-            </div>
-            <div class="all_posts_parrent">
+            <a routerLink="category-table" class="all-posts-component">
+                <img src="assets/images/360073436_991192385406720_7759292297095689224_n.png" alt="">
+                Category</a>
+        </div>
+        <div class="all_posts_parrent">
 
-                <a href="" class="all-posts-component">
-                    <img src="assets/images/361171960_1252801445595315_7113403290842836882_n.png" alt="">
-                    All Tags</a>
-            </div>
+            <a routerLink="authors-table" class="all-posts-component">
+                <img src="assets/images/user (1).png" alt="">
+                Authors</a>
+        </div>
+        <div class="all_posts_parrent">
+            <a routerLink="read-next" class="all-posts-component">
+                <img src="assets/images/book-user.png" alt="">
+                Read Next</a>
+        </div>
+        <div class="all_posts_parrent">
+            <a routerLink="know-table" class="all-posts-component">
+                <img src="assets/images/361036584_797879401810992_736683082343296164_n.png" alt="">
+                Know More</a>
+        </div>
+        <div class="all_posts_parrent">
+            <a routerLink="all-category" class="all-posts-component">
+                <img src="assets/images/361078607_271242122327358_1493203648994066059_n.png" alt="">
+                All Category</a>
+        </div>
+        <div class="all_posts_parrent">
+            <a routerLink="join-new" class="all-posts-component">
+                <img src="assets/images/361114965_274653755213827_2295278680230394208_n.png" alt="">
+                Join New</a>
+        </div>
+        <div class="all_posts_parrent">
 
-            <div class="all_posts_parrent">
-                <a href="" class="all-posts-component">
-                    <img src="assets/images/361066978_4030782890580176_6469629911599013371_n.png" alt="">
-                    Authors Posts</a>
-            </div>
-        </mat-drawer>
+            <a routerLink="tags-table" class="all-posts-component">
+                <img src="assets/images/361171960_1252801445595315_7113403290842836882_n.png" alt="">
+                All Tags</a>
+        </div>
 
-        <mat-drawer-content>
-            <mat-form-field>
-                <mat-select #mode value="over"></mat-select>
-            </mat-form-field>
-            <app-admin-main></app-admin-main>
-        </mat-drawer-content>
-    
+        <div class="all_posts_parrent">
+            <a routerLink="authors-post" class="all-posts-component">
+                <img src="assets/images/361066978_4030782890580176_6469629911599013371_n.png" alt="">
+                Authors Posts</a>
+        </div>
+    </mat-drawer>
+
+    <mat-drawer-content>
+        <mat-form-field>
+            <mat-select #mode value="over"></mat-select>
+        </mat-form-field>
+        <app-admin-main></app-admin-main>
+    </mat-drawer-content>
+
 </mat-drawer-container>

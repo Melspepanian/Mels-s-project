@@ -9,20 +9,31 @@
             <th class="title_style">Image</th>
             <th class="title_style">Title</th>
             <th class="title_style">Paragraph</th>
+            <th class="title_style">Description</th>
             <th class="title_style">Action</th>
+
+
+
 
         </thead>
         <tbody>
             <tr *ngFor="let item of data">
                 <td>
-                    <img src="{{item.img}}" alt="">
+                    <img class="read_next_image" src="{{item.img}}" alt="">
                 </td>
-                <td >
-                    <textarea  class="category_title" name="" id="" cols="" rows="1">{{item.title}}</textarea>
-               
+
+                <td>
+                    <textarea class="category_title" name="" id="" cols="10" rows="2">
+                         {{item.title}}
+                    </textarea>
                 </td>
-                <td >
-                    <textarea class="category_title" name="" id="" cols="" rows="0">{{item.paragraph}}</textarea>
+                <td>
+                    <textarea class="category_title" name="" id="" cols="10" rows="2">
+                         1 {{item.paragraph}}
+                     </textarea>
+                </td>
+                <td class="category_title">
+                    {{item.description}}
                 </td>
                 <td>
                     <button (click)="delete(item)" class="first_button">Delete</button>
@@ -43,11 +54,13 @@
             <label for="image">Image Address</label>
             <input type="text" formControlName="img" id="image">
             <label for="title">Title</label>
-            <input type="text" formControlName="title" id="title">
+            <input type="text" id="title" formControlName="title">
             <label for="paragraph">Paragraph</label>
-            <input type="text" formControlName="paragraph" id="paragraph">
+            <input type="text" id="paragraph" formControlName="paragraph">
+            <label for="description">Description</label>
+            <input type="text" id="description" formControlName="description">
             <button class="save_button">Save</button>
-            
+
         </div>
         <div class="close_icon">
 

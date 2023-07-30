@@ -21,7 +21,7 @@ ngOnInit(): void {
   this.form = this.fb.group({
     name: ["", [Validators.required, Validators.minLength(3)]],
     email: ['', [Validators.required,Validators.pattern(/^[a-zA-Z0-9_-]{1,}@[a-zA-Z0-9]{1,}\.[a-z]{2,4}$/)]],
-    message: "",
+    message:[ "", Validators.required],
     select: ["Query Related", [Validators.required]]
   })
 }

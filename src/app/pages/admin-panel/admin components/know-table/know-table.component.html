@@ -11,19 +11,26 @@
             <th class="title_style">Paragraph</th>
             <th class="title_style">Action</th>
 
+
+
+
+
         </thead>
         <tbody>
             <tr *ngFor="let item of data">
                 <td>
-                    <img src="{{item.img}}" alt="">
+                    <img class="read_next_image" src="{{item.img}}" alt="">
                 </td>
-                <td >
-                    <textarea  class="category_title" name="" id="" cols="" rows="1">{{item.title}}</textarea>
-               
+
+                <td>
+                    <textarea class="category_title" name="" id="" cols="10" rows="2">  {{item.title}}</textarea>
+
                 </td>
-                <td >
-                    <textarea class="category_title" name="" id="" cols="" rows="0">{{item.paragraph}}</textarea>
+                <td>
+                    <textarea class="all-posts_paragraph2" name="" id="" cols="10"
+                        rows="3">{{item.paragraph}}</textarea>
                 </td>
+                
                 <td>
                     <button (click)="delete(item)" class="first_button">Delete</button>
                     <button (click)="edit(item)" class="second_button">Edit</button>
@@ -42,12 +49,13 @@
         <div class="form_parrent_elem">
             <label for="image">Image Address</label>
             <input type="text" formControlName="img" id="image">
-            <label for="title">Title</label>
-            <input type="text" formControlName="title" id="title">
-            <label for="paragraph">Paragraph</label>
-            <input type="text" formControlName="paragraph" id="paragraph">
+            <label for="second_image">Title</label>
+            <input type="text" formControlName="title">
+            <label for="title">Paragraph</label>
+            <input type="text" formControlName="paragraph" id="title">
+
             <button class="save_button">Save</button>
-            
+
         </div>
         <div class="close_icon">
 

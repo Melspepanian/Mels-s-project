@@ -7,22 +7,47 @@
         <thead>
 
             <th class="title_style">Image</th>
+            <th class="title_style">Second Image</th>
             <th class="title_style">Title</th>
+            <th class="title_style">Seqond Title</th>
+            <th class="title_style">Date </th>
+            <th class="title_style">Description</th>
+            <th class="title_style">Author</th>
             <th class="title_style">Paragraph</th>
-            <th class="title_style">Action</th>
+            <th class="title_style">Second Title</th>
+
+
+
 
         </thead>
         <tbody>
             <tr *ngFor="let item of data">
                 <td>
-                    <img src="{{item.img}}" alt="">
+                    <img class="all-posts-sec-img" src="{{item.img}}" alt="">
+                </td>
+                <td class="authors_sec_img">
+                    <img class="all-posts-sec-img" src="{{item.description_icon}}" alt="">
                 </td>
                 <td >
-                    <textarea  class="category_title" name="" id="" cols="" rows="1">{{item.title}}</textarea>
-               
+                    <textarea class="all-posts_paragraph2" name="" id="" > {{item.title}}</textarea>
+
                 </td>
                 <td >
-                    <textarea class="category_title" name="" id="" cols="" rows="0">{{item.paragraph}}</textarea>
+                   <textarea name="" id="" class="all-posts_paragraph" >{{item.paragraph}}</textarea> 
+                </td>
+
+                <td class="category_title">
+                    {{item.date}}
+                </td>
+                <td class="all-posts_paragraph3">
+                    {{item.description_title}}
+                </td>
+                <td class="category_title">
+                    {{item.author}}
+                </td>
+                <td >
+
+                   <textarea class="all-posts_paragraph2" name="" id="" > {{item.sec_title}}</textarea>
                 </td>
                 <td>
                     <button (click)="delete(item)" class="first_button">Delete</button>
@@ -42,12 +67,20 @@
         <div class="form_parrent_elem">
             <label for="image">Image Address</label>
             <input type="text" formControlName="img" id="image">
+            <label for="second_image">Second Image Adress</label>
+            <input type="text" formControlName="sec_img">
             <label for="title">Title</label>
             <input type="text" formControlName="title" id="title">
-            <label for="paragraph">Paragraph</label>
+            <label for="paragraph">Second Title</label>
             <input type="text" formControlName="paragraph" id="paragraph">
+            <label for="date">Date</label>
+            <input type="text" name="Text" id="date" formControlName="date">
+            <label for="description">Description</label>
+            <input type="text" name="description" id="description" formControlName="description">
+            <label for="author">Author</label>
+            <input type="text" name="author" formControlName="author">
             <button class="save_button">Save</button>
-            
+
         </div>
         <div class="close_icon">
 

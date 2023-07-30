@@ -20,18 +20,39 @@
             </div>
             <div class="contact_section_form">
                 <form [formGroup]="form">
-                    <input class="input_style" formControlName="name" type="text" name="Name" id="name"
+                    <input class="input_style_first" formControlName="name" type="text" name="Name" id="name"
                         placeholder="Full Name">
-                    <span class = "email_class" *ngIf="form.get('email')?.hasError('pattern')">The field was filled in incorrectly</span>
-                    <!-- <span *ngIf = "form.get('email')?.hasError('required')"> This page is required to be completed</span> -->
+                    <span class="email_class" *ngIf="form.get('name')?.hasError('minlength')">The field was filled in
+                        incorrectly</span>
+                    <span class="email_class"
+                        *ngIf="form.get('name')?.hasError('required') && form.get('name')?.touched">the field is not
+                        filled</span>
+
                     <input class="input_style1" formControlName="email" type="email" name="email address" id="email"
                         placeholder="Your Email">
+                    <span class="email_class" *ngIf="form.get('email')?.hasError('pattern')">The field was filled in
+                        incorrectly</span>
+                    <span class="email_class"
+                        *ngIf="form.get('email')?.hasError('required') && form.get('email')?.touched">the field is not
+                        filled</span>
 
                     <select formControlName="select" class="form_select">Query Related
                         <option id="form_select_style">Query Related</option>
                     </select>
-                    <input type="text" formControlName="message" class="input_style2" name="Message" id="message"
-                        placeholder="Message">
+                    <span class="email_class" *ngIf="form.get('select')?.hasError('required')">The field was filled in
+                        incorrectly</span>
+                    <span class="email_class"
+                        *ngIf="form.get('select')?.hasError('required') && form.get('select')?.touched">the field is not filled</span> 
+                           
+                    <!-- <input type="text" formControlName="message" class="input_style2" name="Message" id="message"
+                        placeholder="Message"> -->
+                    <textarea name="Message" id="message" cols="0" rows="" formControlName="message"
+                        class="input_style2" placeholder="Message"></textarea>
+                        <span class="email_class" *ngIf="form.get('message')?.hasError('required')">The field was filled in
+                            incorrectly</span>
+                        <span class="email_class"
+                            *ngIf="form.get('message')?.touched">the field is not filled</span> 
+                               
                     <button type="button" [disabled]="form.invalid" class="form_button_style" (click)="add()">Send
                         Message</button>
                 </form>

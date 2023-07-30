@@ -37,11 +37,21 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatSelectModule } from '@angular/material/select';
-import { MatTreeModule} from '@angular/material/tree';
+import { MatTreeModule } from '@angular/material/tree';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { AdminPanelComponent } from './pages/admin-panel/admin-panel.component';
 import { AdminMainComponent } from './pages/admin-panel/admin-main/admin-main.component';
 import { CategoryTableComponent } from './pages/admin-panel/admin components/category-table/category-table.component';
+import { MatTableModule } from '@angular/material/table';
+import { AuthorsTableComponent } from './pages/admin-panel/admin components/authors-table/authors-table.component';
+import { AllPostsTableComponent } from './pages/admin-panel/admin components/all-posts-table/all-posts-table/all-posts-table.component';
+import { ReadNextComponent } from './pages/admin-panel/admin components/read-next/read-next.component';
+import { KnowTableComponent } from './pages/admin-panel/admin components/know-table/know-table.component';
+import { AllCategoryTableComponent } from './pages/admin-panel/admin components/all-category-table/all-category-table.component';
+import { JoinTableComponent } from './pages/admin-panel/admin components/join-table/join-table.component';
+import { AuthorsPostsTableComponent } from './pages/admin-panel/admin components/authors-posts-table/authors-posts-table.component';
+import { TagsTableComponent } from './pages/admin-panel/admin components/tags-table/tags-table.component';
+
 
 
 
@@ -99,10 +109,42 @@ const route: Route[] = [
   {
     path: "admin-panel",
     component: AdminPanelComponent,
-    children:[
+    children: [
       {
-      path: "category-table",
-      component: CategoryTableComponent
+        path: "category-table",
+        component: CategoryTableComponent
+      },
+      {
+        path: "authors-table",
+        component: AuthorsTableComponent
+      },
+      {
+        path: "all-posts",
+        component: AllPostsTableComponent
+      },
+      {
+        path: "read-next",
+        component: ReadNextComponent
+      },
+      {
+        path: "know-table",
+        component: KnowTableComponent
+      },
+      {
+        path:"all-category",
+        component: AllCategoryTableComponent
+      },
+      {
+        path: "join-new",
+        component: JoinTableComponent
+      },
+      {
+        path: "authors-post",
+        component:AuthorsPostsTableComponent
+      },
+      {
+        path: "tags-table",
+        component: TagsTableComponent
       }
     ]
   }
@@ -142,7 +184,17 @@ const route: Route[] = [
     LoginPageComponent,
     AdminPanelComponent,
     AdminMainComponent,
-    CategoryTableComponent
+    CategoryTableComponent,
+    AuthorsTableComponent,
+    AllPostsTableComponent,
+
+    ReadNextComponent,
+    KnowTableComponent,
+    AllCategoryTableComponent,
+    JoinTableComponent,
+    AuthorsPostsTableComponent,
+    TagsTableComponent,
+
 
 
 
@@ -167,7 +219,8 @@ const route: Route[] = [
     MatButtonModule,
     MatTreeModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatTableModule
 
   ],
   providers: [],

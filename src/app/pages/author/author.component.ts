@@ -12,18 +12,23 @@ import { environment } from 'src/environments/environment';
 })
 export class AuthorComponent implements OnInit {
 
-constructor( public service: RequestService, public activeRoute: ActivatedRoute){
+  constructor(public service: RequestService, public activeRoute: ActivatedRoute) {
 
-}
-url:string = environment.home.authors;
-data: Authors[] = []
-id:number = +this.activeRoute.snapshot.params['id'] - 1
-ngOnInit(): void {
- 
-    this.service.getRequest<Authors[]>(this.url).subscribe((data) => 
+  }
+  url: string = environment.home.authors;
+  data: Authors[] = []
+  id: number = +this.activeRoute.snapshot.params['id'] - 1
+  ngOnInit(): void {
+
+    this.service.getRequest<Authors[]>(this.url).subscribe((data) =>
       this.data = data
-      )
+     
+      
+    )
+
+    console.log();
     
-}
+
+  }
 }
 

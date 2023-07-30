@@ -3,21 +3,21 @@
         <div class="footer_elem1_parrent">
             <div class="footer_elem1_logo"><img src="assets/images/nav_Logo.png" alt=""></div>
             <div class="footer_elem1_links">
-                <a class="footer_barr_links" routerLink = "home">Home</a>
-                <a class="footer_barr_links" routerLink = "blog">Blog</a>
-                <a class="footer_barr_links" routerLink = "about_us">About Us</a>
-                <a class="footer_barr_links" routerLink = "contact">Contact us</a>
-                <a class="footer_barr_links" routerLink = "privacy_policy">Privacy Policy</a>
+                <a class="footer_barr_links" routerLink="home">Home</a>
+                <a class="footer_barr_links" routerLink="blog">Blog</a>
+                <a class="footer_barr_links" routerLink="about_us">About Us</a>
+                <a class="footer_barr_links" routerLink="contact">Contact us</a>
+                <a class="footer_barr_links" routerLink="privacy_policy">Privacy Policy</a>
             </div>
         </div>
         <div class="openMenu">
-            <label  for="opMenu1"><img src="assets/images/main-menu.png" alt=""></label>
+            <label for="opMenu1"><img src="assets/images/main-menu.png" alt=""></label>
             <input hidden type="checkbox" id="opMenu1">
-            <div class = "open_menu_links">
-                <a class="nav_barr_links"  routerLink = "home">Home</a>
-                <a class="nav_barr_links" routerLink = "blog">Blog</a>
-                <a class="nav_barr_links" routerLink = "about_us">About Us</a>
-                <a class="nav_barr_links" routerLink = "privacy_policy">Privacy Policy</a>
+            <div class="open_menu_links">
+                <a class="nav_barr_links" routerLink="home">Home</a>
+                <a class="nav_barr_links" routerLink="blog">Blog</a>
+                <a class="nav_barr_links" routerLink="about_us">About Us</a>
+                <a class="nav_barr_links" routerLink="privacy_policy">Privacy Policy</a>
             </div>
         </div>
         <div class="footer_elem_2_parrent">
@@ -25,9 +25,16 @@
                 <h2>Subscribe to our news letter to get latest updates and news</h2>
             </div>
             <div class="footer_elem_2_child1">
-                <form [formGroup] = "footerForm" method="get">
-                    <input formControlName = "email" type="text" name="text" placeholder="Enter Your Email">
-                    <button type="submit" [disabled] = "footerForm.invalid" (click) = "sendMail()">Subscribe</button>
+                <form [formGroup]="footerForm" method="get">
+                    <input formControlName="email" type="text" name="text" placeholder="Enter Your Email">
+                   
+
+                    <button type="submit" [disabled]="footerForm.invalid" (click)="sendMail()">Subscribe</button>
+                    <!-- <span class="email_class" *ngIf="footerForm.get('email')?.hasError('pattern')">The field was filled in
+                        incorrectly</span>
+                    <span class="email_class"
+                        *ngIf="footerForm.get('email')?.hasError('required') && footerForm.get('email')?.touched">the field is not
+                        filled</span> -->
                 </form>
             </div>
         </div>
@@ -37,10 +44,13 @@
                 <p>Hello@finsweet.com 020 7993 2905</p>
             </div>
             <div class="footer_elem_3_child1">
-                <img src="assets/images/facebook.svg" alt="Facebook Icon">
-                <img src="assets/images/twitter.svg" alt="Twitter Icon">
-                <img src="assets/images/instagram.svg" alt="Instagram icon">
-                <img src="assets/images/linkedIn.png" alt="l">
+                <a href="https://www.facebook.com/"> <img src="assets/images/facebook.svg" alt="Facebook Icon"></a>
+                <a
+                    href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoicnUifQ%3D%3D%22%7D">
+                    <img src="assets/images/twitter.svg" alt="Twitter Icon"></a>
+                <a href="https://www.instagram.com/"><img src="assets/images/instagram.svg" alt="Instagram icon"></a>
+                <a href="https://www.linkedin.com/?original_referer=https%3A%2F%2Fwww.google.com%2F"> <img
+                        src="assets/images/linkedIn.png" alt="l"></a>
             </div>
         </div>
 

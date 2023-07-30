@@ -83,7 +83,6 @@ button {
     font-weight: 800;
     line-height: normal;
     letter-spacing: -0.00875rem;
-    text-align: center;
 }
 
 form {
@@ -266,4 +265,7 @@ tr {
 }
 .authors_sec_img img{
     width: 50px;
+}
+.author_table_img {
+    padding-left: 5px;
 }

@@ -1,9 +1,13 @@
-
 /* Components style */
 .parrent {
     background-color: #FAFBFF;
     border-radius: 20px;
     padding: 20px;
+    width: 50%;
+    margin: auto;
+}
+td{
+    width: 200px
 }
 
 th {
@@ -16,9 +20,29 @@ th {
     letter-spacing: -0.00875rem;
     text-align: center;
 }
+form[_ngcontent-ng-c773952064] {
+    display: flex;
+    width: 28%;
+    margin: auto;
+    background-color: white;
+    border-radius: 20px;
+}
+form[_ngcontent-ng-c4227124177]{
+    width: 34%;
+}
+.read_next_image {
+    width: 200px;
+    margin-top: 50px;
+}
 
 tr {
     text-align: center;
+
+}
+
+.form_parrent_elem[_ngcontent-ng-c423118251] {
+    padding: 10px;
+    padding-right: 20px;
 }
 
 /* thead {
@@ -40,6 +64,7 @@ table {
     font-size: 16px;
     border: 1px solid #DF0404;
     color: #DF0404;
+    margin-bottom: 10px;
 }
 
 .second_button {
@@ -83,6 +108,7 @@ button {
     font-weight: 800;
     line-height: normal;
     letter-spacing: -0.00875rem;
+    width: 150px;
     text-align: center;
 }
 
@@ -204,7 +230,7 @@ tr {
     padding-top: 5px;
     padding-right: 8px;
     border-radius: 20px;
-    
+
 }
 
 .delete_button_stiles {
@@ -214,7 +240,7 @@ tr {
 
 .div_elem_close_icon {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .delete_buttons_parrent_stile {
@@ -231,6 +257,7 @@ tr {
     color: #DF0404;
 
 }
+
 .delete_window_button_1:hover {
     background-color: #b40b0b;
     color: white;
@@ -251,10 +278,12 @@ tr {
     /* margin-left: 10px; */
     margin-right: 10px;
 }
-.delete_window_button_2:hover{
+
+.delete_window_button_2:hover {
     background: #00B087;
     color: white;
 }
+
 .delete_buttons_parrent_stile p {
     color: #292D32;
     font-family: "sen";
@@ -264,6 +293,52 @@ tr {
     line-height: normal;
     letter-spacing: -0.00875rem;
 }
-.authors_sec_img img{
-    width: 50px;
+
+.authors_sec_img img {
+    width: 30px;
+}
+
+.author_table_img {
+    padding-left: 5px;
+}
+
+.all-posts-sec-img {
+    width: 100px;
+}
+
+.all-posts_paragraph {
+    width: 300px;
+    color: #292D32;
+    font-family: "sen";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.00875rem;
+    padding-bottom: 20px;
+
+
+}
+
+.all-posts_paragraph2 {
+    width: 320px;
+    color: #292D32;
+    font-family: "sen";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.00875rem;
+
+}
+
+.all-posts_paragraph3 {
+    width: 100px;
+    color: #292D32;
+    font-family: "sen";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.00875rem;
 }

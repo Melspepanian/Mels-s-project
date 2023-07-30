@@ -16,6 +16,19 @@
     text-transform: uppercase;
     color: #232536;
 }
+textarea{
+    border: 1px solid black;
+    font-size: 18px;
+
+}
+textarea::placeholder{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #232536;   
+}
 
 .contact_section_title2 {
     font-family: 'Sen';
@@ -92,13 +105,13 @@
     opacity: 0.6;
 }
 
-.input_style {
+.input_style_first {
     padding: 24px;
     width: 100%;
     margin-top: 30px;
 }
 
-.input_style::placeholder {
+.input_style_first::placeholder {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -111,6 +124,13 @@
 .form_select {
     width: 100%;
     padding: 24px;
+    margin-top: 20px;
+}
+span{
+    color: #e80c0c;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 4px;
 }
 
 select {
@@ -127,8 +147,9 @@ select {
     padding: 24px;
     width: 100%;
     margin-top: 30px;
-    margin-bottom: 30px;
+    
 }
+
 
 .input_style1::placeholder {
     font-family: 'Inter';
@@ -145,7 +166,7 @@ select {
     padding-bottom: 100px;
     width: 100%;
     margin-top: 30px;
-    margin-bottom: 50px;
+    
 }
 select{
     appearance: none;
@@ -158,7 +179,7 @@ select{
     font-weight: 700;
     font-size: 24px;
     line-height: 32px;
-
+    margin-top: 20px;
     text-align: center;
     color: #232536;
     padding: 23px 0;
@@ -183,7 +204,7 @@ select{
         padding: 20px
     }
 
-    .input_style {
+    .input_style_first {
         padding: 20px;
     }
 

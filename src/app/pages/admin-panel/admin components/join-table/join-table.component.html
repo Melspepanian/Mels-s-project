@@ -6,23 +6,27 @@
     <table>
         <thead>
 
-            <th class="title_style">Image</th>
             <th class="title_style">Title</th>
             <th class="title_style">Paragraph</th>
+            <th class="title_style">Button Text</th>
             <th class="title_style">Action</th>
+            
+
+
 
         </thead>
         <tbody>
             <tr *ngFor="let item of data">
-                <td>
-                    <img src="{{item.img}}" alt="">
+                <td class="category_title">
+                   {{item.title}}
                 </td>
-                <td >
-                    <textarea  class="category_title" name="" id="" cols="" rows="1">{{item.title}}</textarea>
-               
-                </td>
-                <td >
-                    <textarea class="category_title" name="" id="" cols="" rows="0">{{item.paragraph}}</textarea>
+                <td class="all-posts_paragraph2">
+                    {{item.paragraph}}
+                 </td>
+
+                <td class="category_title">
+                    {{item.button}}
+                    
                 </td>
                 <td>
                     <button (click)="delete(item)" class="first_button">Delete</button>
@@ -40,14 +44,15 @@
 
     <form action="" [formGroup]="form" (ngSubmit)="save(item?.id)">
         <div class="form_parrent_elem">
-            <label for="image">Image Address</label>
-            <input type="text" formControlName="img" id="image">
-            <label for="title">Title</label>
-            <input type="text" formControlName="title" id="title">
-            <label for="paragraph">Paragraph</label>
-            <input type="text" formControlName="paragraph" id="paragraph">
+           
+            <label for="paragraph">Title</label>
+            <input type="text" id = "paragraph" formControlName = "title">
+            <label for="image">Paragraph</label>
+            <input type="text" formControlName="paragraph" id="image">
+            <label for="Button_text">Button Text</label>
+            <input type="text" name="" id="Button_text" formControlName = "button">
             <button class="save_button">Save</button>
-            
+
         </div>
         <div class="close_icon">
 
@@ -80,3 +85,4 @@
 
     </div>
 </div>
+
