@@ -38,7 +38,8 @@ export class LoginPageComponent implements OnInit {
       this.data = data as Token;
       console.log(this.data.token);
       localStorage.setItem('token', this.data.token);
-      this.router.navigate(['/admin-panel'])
+      this.router.navigate(['/admin-panel']);
+      
     })
   }
 

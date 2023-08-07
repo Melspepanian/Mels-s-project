@@ -6,6 +6,7 @@
     line-height: 40px;
     letter-spacing: -1px;
     color: #232536;
+    padding-left: 20px;
 }
 .category_section2_child2_child {
     width: 296px;
@@ -14,8 +15,7 @@
 }
 .category_section2_child2_child {
     display: flex;
-    justify-content: space-between;
-    padding: 25px 110px 25px 23px;
+    padding:24px
 }
 .category_section2_child2_parent :hover {
     background-color: #FFD050;

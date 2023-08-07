@@ -210,7 +210,7 @@ const route: Route[] = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(route),
+    RouterModule.forRoot(route, {scrollPositionRestoration: 'enabled'}),
     HttpClientModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,

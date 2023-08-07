@@ -50,10 +50,8 @@
                     <textarea name="Message" id="message" cols="0" rows="" formControlName="message"
                         class="input_style2" placeholder="Message">
                     </textarea>
-                    <span class="email_class" *ngIf="form.get('message')?.hasError('required')">The field was filled in
+                    <span class="email_class" *ngIf="form.get('message')?.hasError('required') && form.get('message')?.touched">The field was filled in
                         incorrectly</span>
-                    <span class="email_class" *ngIf="form.get('message')?.touched">the field is not filled</span>
-
                     <button type="button" [disabled]="form.invalid" class="form_button_style" (click)="add()">Send
                         Message</button>
                 </form>

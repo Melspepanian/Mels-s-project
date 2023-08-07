@@ -49,13 +49,14 @@
                 <h3>Page Admin</h3>
             </div>
         </div>
-        <div class="log_out" #logout>
-            <a [routerLink]="'/login-page'" routerLinkActive="active">
+        <div class="log_out" #logout (click)='show_logOut_Confirm()'>
+            <a routerLinkActive="active">
                 <img src="assets/images/exit.png" alt="">
                 <p>Log Out</p>
             </a>
 
         </div>
+
     </div>
 
 </div>
@@ -122,6 +123,15 @@
             <mat-select #mode value="over"></mat-select>
         </mat-form-field>
         <app-admin-main></app-admin-main>
+        <div #log_out_confirm class="log_out_confirm">
+            <div class="log_out_confirm_child">
+                <p> Do you really want to leave</p>
+                <div class="log_out_confirm_child_elems">
+                    <button class="log_out_confirm_child_elems1_style" (click)='delateToken()'>Yes</button>
+                    <button class="log_out_confirm_child_elems2_style" (click)='show_logOut_Confirm()'> No, Thanks</button>
+                </div>
+            </div>
+        </div>
     </mat-drawer-content>
 
 </mat-drawer-container>
