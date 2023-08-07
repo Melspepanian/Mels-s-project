@@ -16,7 +16,7 @@ export class AdminPanelComponent  {
     if (this.isTrue) {
       this.logout.nativeElement.style.transform="translateY(0)"
     } else{
-      this.logout.nativeElement.style.transform="translateY(-60px)"
+      this.logout.nativeElement.style.transform="translateY(-150px)"
     }
   }
 }

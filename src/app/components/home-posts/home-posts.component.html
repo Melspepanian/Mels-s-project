@@ -1,5 +1,5 @@
 <div class="home_postBlock" *ngFor="let item of data">
-    <a [routerLink]="['/layout/blog_post', item.id]">
+    <a [routerLink]="['blog_post', item.id]">
         <div class="home_section_first">
             <p class="second_section_elem1_text">{{item.by}}</p>
             <span class='second_section_elem1_text2'>{{item.author}}</span>

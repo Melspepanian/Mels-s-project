@@ -3,11 +3,11 @@
         <div class="container">
             <div class="author_section1">
                 <div class="author_section_parrent">
-                    <div class="author_section_child" *ngIf = "data && data.length > 0">
-                        <img src="{{data[id].sec_img}}" alt="">
+                    <div class="author_section_child" >
+                        <img src="{{data.sec_img}}" alt="">
                     </div>
-                    <div class="author_section_child1" *ngIf = "data && data.length > 0">
-                        <h2 class="author_section_child_title">Hey there, I’m {{data[id].title}} and welcome to my Blog</h2>
+                    <div class="author_section_child1">
+                        <h2 class="author_section_child_title">Hey there, I’m {{data.title}} and welcome to my Blog</h2>
                         <p class="author_section_child_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim
                             nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.

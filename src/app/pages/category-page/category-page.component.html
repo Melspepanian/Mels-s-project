@@ -1,10 +1,10 @@
 <div class="category_section1">
     <div class="container">
         <div class="category_section1_elem1">
-            <h2 class="category_section1_elem1_title">{{data[id].title}}</h2>
+            <h2 class="category_section1_elem1_title">{{data.title}}</h2>
             <p class="category_section1_elem1_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                 do eiusmod tempor incididunt ut labore.</p>
-            <p class="category_section1_elem1_text2">Blog > {{data[id].title}} </p>
+            <p class="category_section1_elem1_text2">Blog > {{data.title}} </p>
         </div>
     </div>
 
@@ -19,7 +19,7 @@
                     <div class="blog_section_2_parrent">
                         <div class="category_section2_child1">
                             
-                                <app-second-post [categoryInner]="data" [categoryId]="id" ></app-second-post>
+                                <app-second-post [categoryInner]="data"></app-second-post>
                             
                         </div>
                     </div>

@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Admin } from 'src/app/models/admin';
+import { Token } from 'src/app/models/token';
 import { RequestService } from 'src/app/services/request.service';
 import { environment } from 'src/environments/environment';
 
@@ -11,37 +12,35 @@ import { environment } from 'src/environments/environment';
   templateUrl: './login-page.component.html',
   styleUrls: ['./login-page.component.css'],
 
-  
+
 })
 export class LoginPageComponent implements OnInit {
-  hide = true;
-  url:string = environment.admin.admin;
-  data:Admin[] = []
-  form!:FormGroup;
-  constructor(public fb:FormBuilder, public service: RequestService, private router: Router){
+
+  constructor(public fb: FormBuilder, public service: RequestService, public router: Router) {
 
   }
+  hide = true;
+  url: string = "https://reqres.in/api/login";
+  form!: FormGroup;
+  data!: Token;
   ngOnInit(): void {
     this.form = this.fb.group({
-      name:"",
-      password: "",
+      email: ["", Validators.required],
+      password: ["", Validators.required],
     })
-    this.service.getRequest<Admin[]>(this.url).subscribe((data)=>{
-      this.data = data
+
+
+
+  }
+
+  send() {
+    this.service.post<Admin>(this.url, this.form.value).subscribe((data) => {
+      this.data = data as Token;
+      console.log(this.data.token);
+      localStorage.setItem('token', this.data.token);
+      this.router.navigate(['/admin-panel'])
     })
-    
-    
   }
-  
-  send(){
-    if(this.form.get("name")?.value == this.data[0].name && this.form.get("password")?.value == this.data[0].password){
-      this.form.enabled
-      console.log(true);
-      
-    }else{
-      this.form.disabled
-    }
-    
-  }
+
 
 }

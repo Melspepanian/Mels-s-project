@@ -1,5 +1,5 @@
 export interface Admin{
-    name:string;
-    password:string
+   email:string;
+    password:string;
 
 }

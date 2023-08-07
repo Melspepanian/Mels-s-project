@@ -16,17 +16,16 @@ export class AuthorComponent implements OnInit {
 
   }
   url: string = environment.home.authors;
-  data: Authors[] = []
-  id: number = +this.activeRoute.snapshot.params['id'] - 1
+  data!: Authors;
+  id: number = +this.activeRoute.snapshot.params['id'] 
   ngOnInit(): void {
 
-    this.service.getRequest<Authors[]>(this.url).subscribe((data) =>
+    this.service.getRequest<Authors>(this.url + `/${this.id}`).subscribe((data) =>
       this.data = data
      
       
     )
 
-    console.log();
     
 
   }

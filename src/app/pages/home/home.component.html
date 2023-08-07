@@ -33,8 +33,8 @@
             <div class="second_section_second_elem2">
                 <div class="second_section_second_elem_2_2">
                     <p class="second_section_elem1">All Posts</p>
-                    <a href="../Html/author.html"></a>
-                    <p class="second_section_elems3">View All</p>
+                    
+                    <a routerLink = "/blog" class="second_section_elems3">View All</a>
                 </div>
                 <div class="second_section_second_elem_2_2_1">
 
@@ -119,7 +119,7 @@
             <!-- <div class="home_section6_parrent"> -->
 
             <div class="home_section6_child">
-                <a class = "authors_block" *ngFor="let item of data" [routerLink]="['/layout/author', item.id]">
+                <a class = "authors_block" *ngFor="let item of data" [routerLink]="['/author', item.id]">
 
 
                     <app-authors [authorsInner]="item"></app-authors>

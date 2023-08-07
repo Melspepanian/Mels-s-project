@@ -14,14 +14,14 @@ import { environment } from 'src/environments/environment';
 })
 
 export class CategoryPageComponent implements OnInit {
-data: Category[] = [];
+data!: Category;
 url:string = environment.home.category;
-id: number = +this.activeRouter.snapshot.params['id'] - 1
+id: number = +this.activeRouter.snapshot.params['id']
 constructor(public service: RequestService, private route: Router, public activeRouter: ActivatedRoute){
 
 }
 ngOnInit(): void {
-  this.service.getRequest<Category[]>(this.url).subscribe((data) => {
+  this.service.getRequest<Category>(this.url + `/${this.id}`).subscribe((data) => {
     this.data = data
   })
 }

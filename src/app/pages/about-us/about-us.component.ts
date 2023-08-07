@@ -11,6 +11,7 @@ import { environment } from 'src/environments/environment';
   styleUrls: ['./about-us.component.css']
 })
 export class AboutUsComponent {
+  id:number = this.activeRoute.snapshot.params['id'] 
   url: string = environment.home.authors;
   data: Authors[] = [];
   @Input() authorsInner!: Authors

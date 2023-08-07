@@ -13,8 +13,7 @@ export class SecondPostComponent implements OnInit {
 @Input() secondPost!:Second_post;
 url:string = environment.category_page.second_post;
 data:Second_post[] = [];
-@Input() categoryInner:Category[] = [];
-@Input() categoryId!:number 
+@Input() categoryInner!:Category;
 
 
 constructor(public service: RequestService){
@@ -24,7 +23,6 @@ ngOnInit(): void {
   this.service.getRequest<Second_post[]>(this.url).subscribe((data) =>{
     this.data = data
     console.log(this.categoryInner);
-    console.log(this.categoryId);
     
     
   

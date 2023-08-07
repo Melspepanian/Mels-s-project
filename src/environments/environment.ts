@@ -32,8 +32,6 @@ export const environment = {
     admin: {
         admin:host + "/admin"
     },
-    login:{
-        login:host + "/login-page"
-    }
+  
 
 }

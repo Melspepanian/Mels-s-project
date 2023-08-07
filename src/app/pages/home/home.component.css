@@ -1,14 +1,17 @@
 .first_section {
     background-image: url(../../../assets/images/1_photo_menu.png);
+    background-attachment: fixed;
     background-size: contain;
     background-repeat: no-repeat;
     background-size: cover;
     /* height: 1000px; */
     filter: brightness(.9);
-    padding-bottom: 294px;
-    background-position-y: -122px;
+    padding-bottom: 154px;
+    background-position-y: -10px;
 }
-
+.menu_second_section{
+    margin-top: 50px;
+}
 .first_text_style {
     font-family: 'Sen';
     font-style: normal;

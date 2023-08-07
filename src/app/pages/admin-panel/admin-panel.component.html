@@ -50,8 +50,7 @@
             </div>
         </div>
         <div class="log_out" #logout>
-            <a  routerLink="/login-page">
-
+            <a [routerLink]="'/login-page'" routerLinkActive="active">
                 <img src="assets/images/exit.png" alt="">
                 <p>Log Out</p>
             </a>

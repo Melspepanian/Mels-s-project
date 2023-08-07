@@ -12,12 +12,12 @@ import { environment } from 'src/environments/environment';
 })
 export class BlogPostComponent implements OnInit {
 
-  id: number = +this.activeRoute.snapshot.params['id'] - 1
+  id: number = +this.activeRoute.snapshot.params['id'] 
   url: string = environment.home.tags;
-  data: Home_posts[] = [];
+  data!: Home_posts;
   constructor(public service: RequestService, private router: Router, public activeRoute: ActivatedRoute) { }
   ngOnInit(): void {
-    this.service.getRequest<Home_posts[]>(this.url).subscribe((data) => {
+    this.service.getRequest<Home_posts>(this.url + `/${this.id}`).subscribe((data) => {
       this.data = data
 
 

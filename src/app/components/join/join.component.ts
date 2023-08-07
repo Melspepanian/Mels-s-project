@@ -12,6 +12,9 @@ export class JoinComponent implements OnInit {
 @Input() joinInner!:Join;
 url: string = environment.home.join;
 data: Join[] = [];
+scrollToBottom() {
+  window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+}
 constructor(public service: RequestService){
 
 }

@@ -51,6 +51,8 @@ import { AllCategoryTableComponent } from './pages/admin-panel/admin components/
 import { JoinTableComponent } from './pages/admin-panel/admin components/join-table/join-table.component';
 import { AuthorsPostsTableComponent } from './pages/admin-panel/admin components/authors-posts-table/authors-posts-table.component';
 import { TagsTableComponent } from './pages/admin-panel/admin components/tags-table/tags-table.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { canActivateGuard } from './Guard/can-activate.guard';
 
 
 
@@ -61,11 +63,11 @@ import { TagsTableComponent } from './pages/admin-panel/admin components/tags-ta
 
 const route: Route[] = [
   {
-    path: "layout",
+    path: "",
     component: LayoutComponent,
     children: [
       {
-        path: "home",
+        path: "",
         component: HomeComponent
       },
       {
@@ -104,7 +106,8 @@ const route: Route[] = [
   },
   {
     path: "login-page",
-    component: LoginPageComponent
+    component: LoginPageComponent,
+    canActivate:[canActivateGuard]
   },
   {
     path: "admin-panel",
@@ -147,6 +150,10 @@ const route: Route[] = [
         component: TagsTableComponent
       }
     ]
+  },
+  {
+    path: "**",
+    component: PageNotFoundComponent
   }
 
 
@@ -194,6 +201,7 @@ const route: Route[] = [
     JoinTableComponent,
     AuthorsPostsTableComponent,
     TagsTableComponent,
+    PageNotFoundComponent,
 
 
 

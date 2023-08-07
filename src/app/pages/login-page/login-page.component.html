@@ -1,4 +1,4 @@
-<form action="" [formGroup]="form">
+<form action="" [formGroup]="form" (ngSubmit) = "send()">
     <div class="login_page_background">
         <div class="first_element ">
             <div class="logo_png">
@@ -47,7 +47,7 @@
                     <h2 class="login_page_title">Admin Page</h2>
                     <mat-form-field floatLabel="always">
                         <mat-label>Your NickName</mat-label>
-                        <input matInput type="text" id="name" formControlName="name" class="example-right-align"
+                        <input matInput type="email" id="name" formControlName="email"  class="example-right-align"
                             placeholder="">
                     </mat-form-field>
                 </div>
@@ -62,7 +62,7 @@
 
 
                 <div class="example-button-row">
-                    <button (click)="send()" mat-button routerLink="/admin-panel">Sign In</button>
+                    <button  mat-button    [disabled]="form.invalid">Sign In</button>
                 </div>
             </div>
         </div>
