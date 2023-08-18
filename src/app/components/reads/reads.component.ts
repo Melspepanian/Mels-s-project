@@ -1,3 +1,4 @@
+import { NgForOf } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
 import { Reads } from 'src/app/models/read';
 import { RequestService } from 'src/app/services/request.service';
@@ -6,7 +7,9 @@ import { environment } from 'src/environments/environment';
 @Component({
   selector: 'app-reads',
   templateUrl: './reads.component.html',
-  styleUrls: ['./reads.component.css']
+  styleUrls: ['./reads.component.css'],
+  standalone: true,
+  imports: [NgForOf]
 })
 export class ReadsComponent implements OnInit {
 @Input() readsInner!: Reads

@@ -1,34 +1,16 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { NavComponent } from './components/header/nav/nav.component';
 import { LayoutComponent } from './layout/layout/layout.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { HomeComponent } from './pages/home/home.component';
-import { AuthorsComponent } from './components/authors/authors.component';
-import { JoinComponent } from './components/join/join.component';
 import { Route, RouterModule } from '@angular/router';
-import { BlogComponent } from './pages/blog/blog.component';
-import { PostsComponent } from './components/posts/posts.component';
-import { BlogPostComponent } from './pages/blog-post/blog-post.component';
-import { ReadsComponent } from './components/reads/reads.component';
-import { AboutUsComponent } from './pages/about-us/about-us.component';
-import { CategoryComponent } from './components/category/category.component';
-import { CategoryPageComponent } from './pages/category-page/category-page.component';
-import { SecondCategoryComponent } from './components/second-category/second-category.component';
 import { ContactComponent } from './pages/contact/contact.component';
-import { AuthorComponent } from './pages/author/author.component';
 import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.component';
 import { PrivacyComponent } from './components/privacy/privacy.component';
-import { TagsComponent } from './components/tags/tags.component';
-import { HomePostsComponent } from './components/home-posts/home-posts.component';
 import { HttpClientModule } from '@angular/common/http';
-import { SecondPostComponent } from './components/second-post/second-post.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { AuthorsPostComponent } from './components/authors-post/authors-post.component';
-import { KnowComponent } from './components/know/know.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -68,24 +50,24 @@ const route: Route[] = [
     children: [
       {
         path: "",
-        component: HomeComponent
+        loadChildren:() => import("./pages/home/home-module/home-module.module").then(m => m.HomeModuleModule)
       },
       {
         path: "blog",
-        component: BlogComponent
+        loadChildren: ( ) => import("./pages/blog/blog-module/blog-module.module").then(m => m.BlogModuleModule)
       },
       {
         path: "blog_post/:id",
-        component: BlogPostComponent
+        loadChildren:() => import("./pages/blog-post/blog-posts-module/blog-posts-module.module").then(m => m.BlogPostsModuleModule)
       },
       {
         path: "about_us",
-        component: AboutUsComponent
+        loadChildren:() => import("./pages/about-us/about-us-module/about-us-module.module").then(m => m.AboutUsModuleModule)
       },
 
       {
         path: "category_page/:id",
-        component: CategoryPageComponent
+        loadChildren: () => import ("./pages/category-page/category-module/category-module.module").then(m => m.CategoryModuleModule)
       },
 
       {
@@ -94,7 +76,7 @@ const route: Route[] = [
       },
       {
         path: "author/:id",
-        component: AuthorComponent
+        loadChildren: () => import ("./pages/author/author-module/author-module.module").then(m => m.AuthorModuleModule)
       },
       {
         path: "privacy_policy",
@@ -107,11 +89,11 @@ const route: Route[] = [
   {
     path: "login-page",
     component: LoginPageComponent,
-    canActivate:[canActivateGuard]
   },
   {
     path: "admin-panel",
     component: AdminPanelComponent,
+    canActivate:[canActivateGuard],
     children: [
       {
         path: "category-table",
@@ -155,9 +137,6 @@ const route: Route[] = [
     path: "**",
     component: PageNotFoundComponent
   }
-
-
-
 ]
 
 
@@ -168,33 +147,15 @@ const route: Route[] = [
     NavComponent,
     LayoutComponent,
     FooterComponent,
-    HomeComponent,
-    CategoryComponent,
-    AuthorsComponent,
-    JoinComponent,
-    BlogComponent,
-    PostsComponent,
-    BlogPostComponent,
-    ReadsComponent,
-    AboutUsComponent,
-    CategoryPageComponent,
-    SecondCategoryComponent,
     ContactComponent,
-    AuthorComponent,
     PrivacyPolicyComponent,
     PrivacyComponent,
-    TagsComponent,
-    HomePostsComponent,
-    SecondPostComponent,
-    AuthorsPostComponent,
-    KnowComponent,
     LoginPageComponent,
     AdminPanelComponent,
     AdminMainComponent,
     CategoryTableComponent,
     AuthorsTableComponent,
     AllPostsTableComponent,
-
     ReadNextComponent,
     KnowTableComponent,
     AllCategoryTableComponent,
@@ -202,11 +163,6 @@ const route: Route[] = [
     AuthorsPostsTableComponent,
     TagsTableComponent,
     PageNotFoundComponent,
-
-
-
-
-
   ],
   imports: [
     BrowserModule,

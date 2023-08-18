@@ -1,14 +1,16 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { AuthorsPostComponent } from 'src/app/components/authors-post/authors-post.component';
 import { Authors } from 'src/app/models/authors';
-import { Posts } from 'src/app/models/posts';
 import { RequestService } from 'src/app/services/request.service';
 import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-author',
   templateUrl: './author.component.html',
-  styleUrls: ['./author.component.css']
+  styleUrls: ['./author.component.css'],
+  standalone: true,
+  imports: [AuthorsPostComponent]
 })
 export class AuthorComponent implements OnInit {
 

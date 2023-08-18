@@ -1,3 +1,4 @@
+import { NgForOf } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
 import { Category } from 'src/app/models/category';
 import { Second_post } from 'src/app/models/second-post';
@@ -7,7 +8,9 @@ import { environment } from 'src/environments/environment';
 @Component({
   selector: 'app-second-post',
   templateUrl: './second-post.component.html',
-  styleUrls: ['./second-post.component.css']
+  styleUrls: ['./second-post.component.css'],
+  standalone: true,
+  imports: [NgForOf]
 })
 export class SecondPostComponent implements OnInit {
 @Input() secondPost!:Second_post;

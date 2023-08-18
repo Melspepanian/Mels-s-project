@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ActivatedRoute, Route, Router } from '@angular/router';
+import { ActivatedRoute, Route, Router, RouterModule } from '@angular/router';
 import { Home_posts } from 'src/app/models/home_tags';
 import { Posts } from 'src/app/models/posts';
 import { RequestService } from 'src/app/services/request.service';
@@ -8,7 +8,9 @@ import { environment } from 'src/environments/environment';
 @Component({
   selector: 'app-posts',
   templateUrl: './posts.component.html',
-  styleUrls: ['./posts.component.css']
+  styleUrls: ['./posts.component.css'],
+  standalone: true,
+  imports: [RouterModule]
 })
 export class PostsComponent implements OnInit {
   @Input() postsInner!: Posts;

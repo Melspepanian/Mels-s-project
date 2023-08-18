@@ -1,17 +1,20 @@
 import { Component, Input } from '@angular/core';
-import { By } from '@angular/platform-browser';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute, Router, RouterModule } from '@angular/router';
+import { AuthorsComponent } from 'src/app/components/authors/authors.component';
+import { CategoryComponent } from 'src/app/components/category/category.component';
+import { HomePostsComponent } from 'src/app/components/home-posts/home-posts.component';
+import { JoinComponent } from 'src/app/components/join/join.component';
 import { Authors } from 'src/app/models/authors';
-import { Category } from 'src/app/models/category';
-import { Home_posts } from 'src/app/models/home_tags';
-import { Tags } from "src/app/models/tags";
 import { RequestService } from 'src/app/services/request.service';
 import { environment } from 'src/environments/environment';
+
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
+  standalone: true,
+  imports:[AuthorsComponent,HomePostsComponent, CategoryComponent, JoinComponent, RouterModule]
 })
 export class HomeComponent {
   id:number = +this.activeRoute.snapshot.params['id']

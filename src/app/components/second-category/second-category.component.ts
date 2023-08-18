@@ -1,3 +1,4 @@
+import { NgForOf } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
 import { Sec_category } from 'src/app/models/second_category';
 import { RequestService } from 'src/app/services/request.service';
@@ -6,7 +7,9 @@ import { environment } from 'src/environments/environment';
 @Component({
   selector: 'app-second-category',
   templateUrl: './second-category.component.html',
-  styleUrls: ['./second-category.component.css']
+  styleUrls: ['./second-category.component.css'],
+  standalone: true,
+  imports: [NgForOf]
 })
 export class SecondCategoryComponent implements OnInit {
  @Input() secondCategoryInner!: Sec_category;

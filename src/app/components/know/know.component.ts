@@ -1,3 +1,4 @@
+import { NgStyle } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { Know_post } from 'src/app/models/know_models';
 import { RequestService } from 'src/app/services/request.service';
@@ -6,7 +7,9 @@ import { environment } from 'src/environments/environment';
 @Component({
   selector: 'app-know',
   templateUrl: './know.component.html',
-  styleUrls: ['./know.component.css']
+  styleUrls: ['./know.component.css'],
+  standalone: true,
+  imports: [NgStyle]
 })
 export class KnowComponent implements OnInit {
 url: string = environment.about_us.know_post;

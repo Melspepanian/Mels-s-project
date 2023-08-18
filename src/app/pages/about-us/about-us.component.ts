@@ -1,14 +1,18 @@
 import { Component, Input } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute, Router, RouterModule } from '@angular/router';
+import { AuthorsComponent } from 'src/app/components/authors/authors.component';
+import { JoinComponent } from 'src/app/components/join/join.component';
+import { KnowComponent } from 'src/app/components/know/know.component';
 import { Authors } from 'src/app/models/authors';
-import { Category } from 'src/app/models/category';
 import { RequestService } from 'src/app/services/request.service';
 import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-about-us',
   templateUrl: './about-us.component.html',
-  styleUrls: ['./about-us.component.css']
+  styleUrls: ['./about-us.component.css'],
+  standalone: true,
+  imports: [JoinComponent, KnowComponent, AuthorsComponent, RouterModule]
 })
 export class AboutUsComponent {
   id:number = this.activeRoute.snapshot.params['id'] 

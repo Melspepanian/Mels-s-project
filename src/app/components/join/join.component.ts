@@ -1,3 +1,4 @@
+import { NgForOf } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
 import { Join } from 'src/app/models/join';
 import { RequestService } from 'src/app/services/request.service';
@@ -6,7 +7,9 @@ import { environment } from 'src/environments/environment';
 @Component({
   selector: 'app-join',
   templateUrl: './join.component.html',
-  styleUrls: ['./join.component.css']
+  styleUrls: ['./join.component.css'],
+  standalone:true,
+  imports: [NgForOf]
 })
 export class JoinComponent implements OnInit {
 @Input() joinInner!:Join;
