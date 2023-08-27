@@ -1,5 +1,6 @@
+import { NgForOf, NgStyle } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { Reads } from 'src/app/models/read';
 import { RequestService } from 'src/app/services/request.service';
 import { environment } from 'src/environments/environment';
@@ -7,7 +8,9 @@ import { environment } from 'src/environments/environment';
 @Component({
   selector: 'app-read-next',
   templateUrl: './read-next.component.html',
-  styleUrls: ['./read-next.component.css']
+  styleUrls: ['./read-next.component.css'],
+  standalone: true,
+  imports: [NgStyle, NgForOf, ReactiveFormsModule]
 })
 export class ReadNextComponent implements OnInit {
   constructor(public service: RequestService, public fb: FormBuilder){

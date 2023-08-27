@@ -1,6 +1,6 @@
+import {  NgForOf, NgStyle } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
-import { Authors_post } from 'src/app/models/author_post';
+import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { Tags } from 'src/app/models/tags';
 import { RequestService } from 'src/app/services/request.service';
 import { environment } from 'src/environments/environment';
@@ -8,7 +8,9 @@ import { environment } from 'src/environments/environment';
 @Component({
   selector: 'app-tags-table',
   templateUrl: './tags-table.component.html',
-  styleUrls: ['./tags-table.component.css']
+  styleUrls: ['./tags-table.component.css'],
+  standalone: true,
+  imports: [NgForOf, NgStyle, ReactiveFormsModule]
 })
 export class TagsTableComponent implements OnInit {
   constructor(public service: RequestService, public fb: FormBuilder) {

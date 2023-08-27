@@ -22,17 +22,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatTreeModule } from '@angular/material/tree';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { AdminPanelComponent } from './pages/admin-panel/admin-panel.component';
-import { AdminMainComponent } from './pages/admin-panel/admin-main/admin-main.component';
-import { CategoryTableComponent } from './pages/admin-panel/admin components/category-table/category-table.component';
 import { MatTableModule } from '@angular/material/table';
-import { AuthorsTableComponent } from './pages/admin-panel/admin components/authors-table/authors-table.component';
-import { AllPostsTableComponent } from './pages/admin-panel/admin components/all-posts-table/all-posts-table/all-posts-table.component';
-import { ReadNextComponent } from './pages/admin-panel/admin components/read-next/read-next.component';
-import { KnowTableComponent } from './pages/admin-panel/admin components/know-table/know-table.component';
-import { AllCategoryTableComponent } from './pages/admin-panel/admin components/all-category-table/all-category-table.component';
-import { JoinTableComponent } from './pages/admin-panel/admin components/join-table/join-table.component';
-import { AuthorsPostsTableComponent } from './pages/admin-panel/admin components/authors-posts-table/authors-posts-table.component';
-import { TagsTableComponent } from './pages/admin-panel/admin components/tags-table/tags-table.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { canActivateGuard } from './Guard/can-activate.guard';
 
@@ -50,24 +40,24 @@ const route: Route[] = [
     children: [
       {
         path: "",
-        loadChildren:() => import("./pages/home/home-module/home-module.module").then(m => m.HomeModuleModule)
+        loadChildren: () => import("./pages/home/home-module/home-module.module").then(m => m.HomeModuleModule)
       },
       {
         path: "blog",
-        loadChildren: ( ) => import("./pages/blog/blog-module/blog-module.module").then(m => m.BlogModuleModule)
+        loadChildren: () => import("./pages/blog/blog-module/blog-module.module").then(m => m.BlogModuleModule)
       },
       {
         path: "blog_post/:id",
-        loadChildren:() => import("./pages/blog-post/blog-posts-module/blog-posts-module.module").then(m => m.BlogPostsModuleModule)
+        loadChildren: () => import("./pages/blog-post/blog-posts-module/blog-posts-module.module").then(m => m.BlogPostsModuleModule)
       },
       {
         path: "about_us",
-        loadChildren:() => import("./pages/about-us/about-us-module/about-us-module.module").then(m => m.AboutUsModuleModule)
+        loadChildren: () => import("./pages/about-us/about-us-module/about-us-module.module").then(m => m.AboutUsModuleModule)
       },
 
       {
         path: "category_page/:id",
-        loadChildren: () => import ("./pages/category-page/category-module/category-module.module").then(m => m.CategoryModuleModule)
+        loadChildren: () => import("./pages/category-page/category-module/category-module.module").then(m => m.CategoryModuleModule)
       },
 
       {
@@ -76,7 +66,7 @@ const route: Route[] = [
       },
       {
         path: "author/:id",
-        loadChildren: () => import ("./pages/author/author-module/author-module.module").then(m => m.AuthorModuleModule)
+        loadChildren: () => import("./pages/author/author-module/author-module.module").then(m => m.AuthorModuleModule)
       },
       {
         path: "privacy_policy",
@@ -93,43 +83,46 @@ const route: Route[] = [
   {
     path: "admin-panel",
     component: AdminPanelComponent,
-    canActivate:[canActivateGuard],
+    canActivate: [canActivateGuard],
     children: [
       {
         path: "category-table",
-        component: CategoryTableComponent
+        loadChildren: () => import("./pages/admin-panel/admin components/category-table/category-table-module/category-table-module.module").then(m => m.CategoryTableModuleModule)
       },
       {
         path: "authors-table",
-        component: AuthorsTableComponent
+        loadChildren: () =>
+        import("./pages/admin-panel/admin components/authors-table/authors-table-module/authors-table-module.module").then(m => m.AuthorsTableModuleModule)
       },
       {
         path: "all-posts",
-        component: AllPostsTableComponent
+        loadChildren: () =>
+         import("./pages/admin-panel/admin components/all-posts-table/all-posts-table/all-posts-table-module/all-posts-table-module.module").then(m => m.AllPostsTableModuleModule)
       },
       {
         path: "read-next",
-        component: ReadNextComponent
+        loadChildren: () => import ("./pages/admin-panel/admin components/read-next/read-next-module/read-next-module.module").then(m => m.ReadNextModuleModule)
       },
       {
         path: "know-table",
-        component: KnowTableComponent
+        loadChildren: () => import("./pages/admin-panel/admin components/know-table/know-table-module/know-table-module.module").then(m => m.KnowTableModuleModule)
       },
       {
-        path:"all-category",
-        component: AllCategoryTableComponent
+        path: "all-category",
+        loadChildren: () => import("./pages/admin-panel/admin components/all-category-table/all-category-table-module/all-category-table-module.module").then(m => m.AllCategoryTableModuleModule)
       },
       {
         path: "join-new",
-        component: JoinTableComponent
+        loadChildren: () => import("./pages/admin-panel/admin components/join-table/join-table-module/join-table-module.module").then(m => m.JoinTableModuleModule)
       },
       {
         path: "authors-post",
-        component:AuthorsPostsTableComponent
+        loadChildren: () =>
+         import("./pages/admin-panel/admin components/authors-posts-table/authors-posts-table-module/authors-posts-table-module.module").then(m => m.AuthorsPostsTableModuleModule)
       },
       {
         path: "tags-table",
-        component: TagsTableComponent
+        loadChildren:() => import("./pages/admin-panel/admin components/tags-table/tags-table-module/tags-table-module.module").then(m => m.TagsTableModuleModule)
       }
     ]
   },
@@ -151,22 +144,11 @@ const route: Route[] = [
     PrivacyPolicyComponent,
     PrivacyComponent,
     LoginPageComponent,
-    AdminPanelComponent,
-    AdminMainComponent,
-    CategoryTableComponent,
-    AuthorsTableComponent,
-    AllPostsTableComponent,
-    ReadNextComponent,
-    KnowTableComponent,
-    AllCategoryTableComponent,
-    JoinTableComponent,
-    AuthorsPostsTableComponent,
-    TagsTableComponent,
     PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(route, {scrollPositionRestoration: 'enabled'}),
+    RouterModule.forRoot(route, { scrollPositionRestoration: 'enabled' }),
     HttpClientModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,

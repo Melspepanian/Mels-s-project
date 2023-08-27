@@ -1,10 +1,17 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, ElementRef,  ViewChild } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSelectModule } from '@angular/material/select';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { Router, RouterModule } from '@angular/router';
+import { AdminMainComponent } from './admin-main/admin-main.component';
 
 @Component({
   selector: 'app-admin-panel',
   templateUrl: './admin-panel.component.html',
   styleUrls: ['./admin-panel.component.css'],
+  standalone: true,
+  imports: [MatSidenavModule, MatFormFieldModule, MatSelectModule, MatButtonModule, AdminMainComponent, RouterModule]
 })
 export class AdminPanelComponent  {
   @ViewChild('logout') logout!: ElementRef;

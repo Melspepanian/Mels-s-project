@@ -1,5 +1,6 @@
+import { NgForOf, NgStyle } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { Know_post } from 'src/app/models/know_models';
 import { RequestService } from 'src/app/services/request.service';
 import { environment } from 'src/environments/environment';
@@ -7,7 +8,9 @@ import { environment } from 'src/environments/environment';
 @Component({
   selector: 'app-know-table',
   templateUrl: './know-table.component.html',
-  styleUrls: ['./know-table.component.css']
+  styleUrls: ['./know-table.component.css'],
+  standalone:true,
+  imports: [NgForOf, NgStyle, ReactiveFormsModule]
 })
 export class KnowTableComponent implements OnInit{
   constructor(public service: RequestService, public fb: FormBuilder){

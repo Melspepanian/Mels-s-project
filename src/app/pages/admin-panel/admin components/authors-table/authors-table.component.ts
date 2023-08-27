@@ -1,5 +1,6 @@
+import { NgForOf, NgStyle } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { Authors } from 'src/app/models/authors';
 import { RequestService } from 'src/app/services/request.service';
 import { environment } from 'src/environments/environment';
@@ -7,7 +8,9 @@ import { environment } from 'src/environments/environment';
 @Component({
   selector: 'app-authors-table',
   templateUrl: './authors-table.component.html',
-  styleUrls: ['./authors-table.component.css']
+  styleUrls: ['./authors-table.component.css'],
+  standalone: true,
+  imports: [NgStyle, NgForOf, ReactiveFormsModule]
 })
 export class AuthorsTableComponent implements OnInit{
 constructor(public service: RequestService, public fb: FormBuilder){

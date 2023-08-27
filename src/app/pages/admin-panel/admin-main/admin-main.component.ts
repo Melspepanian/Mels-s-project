@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 import { Authors } from 'src/app/models/authors';
 import { Category } from 'src/app/models/category';
 import { Home_posts } from 'src/app/models/home_tags';
@@ -8,7 +9,9 @@ import { environment } from 'src/environments/environment';
 @Component({
   selector: 'app-admin-main',
   templateUrl: './admin-main.component.html',
-  styleUrls: ['./admin-main.component.css']
+  styleUrls: ['./admin-main.component.css'],
+  standalone:true,
+  imports: [RouterOutlet]
 })
 export class AdminMainComponent implements OnInit {
   constructor(public service: RequestService){
