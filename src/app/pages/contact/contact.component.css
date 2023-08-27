@@ -14,7 +14,7 @@
     text-align: center;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: #232536;
+    color: var(--color1);
 }
 textarea{
     border: 1px solid black;
@@ -27,7 +27,7 @@ textarea::placeholder{
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
-    color: #232536;   
+    color: var(--color1);   
 }
 
 .contact_section_title2 {
@@ -38,7 +38,7 @@ textarea::placeholder{
     line-height: 64px;
     text-align: center;
     letter-spacing: -2px;
-    color: #232536;
+    color: var(--color1);
 
 }
 
@@ -56,7 +56,7 @@ textarea::placeholder{
 }
 
 .contact_section_elem1 {
-    background-color: #592EA9;
+    background-color: var(--purple);
 }
 
 .contact_section_elem1_child_title {
@@ -117,7 +117,7 @@ textarea::placeholder{
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
-    color: #232536;
+    color: var(--color1);
 
 }
 
@@ -139,7 +139,7 @@ select {
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
-    color: #232536;
+    color: var(--color1);
 
 }
 
@@ -157,7 +157,7 @@ select {
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
-    color: #232536;
+    color: var(--color1);
 
 }
 
@@ -173,7 +173,7 @@ select{
 }
 .form_button_style {
     width: 100%;
-    background-color: #FFD050;
+    background-color: var(--yellow);
     font-family: 'Sen';
     font-style: normal;
     font-weight: 700;
@@ -181,7 +181,7 @@ select{
     line-height: 32px;
     margin-top: 20px;
     text-align: center;
-    color: #232536;
+    color: var(--color1);
     padding: 23px 0;
     border: none;
 }

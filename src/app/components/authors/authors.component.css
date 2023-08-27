@@ -1,3 +1,4 @@
+@import url("../../../styles.css");
 .authors_list {
     display: flex;
     justify-content: space-between;
@@ -17,7 +18,7 @@ h3 {
     font-size: 28px;
     line-height: 40px;
     letter-spacing: -1px;
-    color: #232536;
+    color: var(--color1);
 }
 
 p {

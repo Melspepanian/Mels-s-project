@@ -1,3 +1,4 @@
+import { NgForOf } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute, Route, Router, RouterModule } from '@angular/router';
 import { Home_posts } from 'src/app/models/home_tags';
@@ -10,7 +11,7 @@ import { environment } from 'src/environments/environment';
   templateUrl: './posts.component.html',
   styleUrls: ['./posts.component.css'],
   standalone: true,
-  imports: [RouterModule]
+  imports: [RouterModule, NgForOf]
 })
 export class PostsComponent implements OnInit {
   @Input() postsInner!: Posts;

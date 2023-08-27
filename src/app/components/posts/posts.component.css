@@ -1,3 +1,4 @@
+@import url("../../../styles.css");
 .blog_section_2_child {
     justify-content: space-between;
     padding-right: 213px;
@@ -14,7 +15,7 @@
     line-height: 20px;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: #592EA9;
+    color: var(--purple);
     padding-bottom: 40px;
 }
 .blog_section_2_child_text2 {
@@ -24,7 +25,7 @@
     font-size: 36px;
     line-height: 48px;
     letter-spacing: -2px;
-    color: #232536;
+    color: var(--color1);
 
 }
 

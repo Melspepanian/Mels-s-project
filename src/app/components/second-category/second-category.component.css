@@ -18,5 +18,5 @@
     padding:24px
 }
 .category_section2_child2_parent :hover {
-    background-color: #FFD050;
+    background-color: var(--yellow);
   }

@@ -1,3 +1,4 @@
+import { NgForOf } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { AuthorsComponent } from 'src/app/components/authors/authors.component';
@@ -14,7 +15,7 @@ import { environment } from 'src/environments/environment';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
   standalone: true,
-  imports:[AuthorsComponent,HomePostsComponent, CategoryComponent, JoinComponent, RouterModule]
+  imports:[AuthorsComponent,HomePostsComponent, CategoryComponent, JoinComponent, RouterModule, NgForOf]
 })
 export class HomeComponent {
   id:number = +this.activeRoute.snapshot.params['id']

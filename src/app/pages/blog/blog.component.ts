@@ -1,3 +1,4 @@
+import { NgForOf } from '@angular/common';
 import { Component } from '@angular/core';
 import { CategoryComponent } from 'src/app/components/category/category.component';
 import { JoinComponent } from 'src/app/components/join/join.component';
@@ -9,7 +10,7 @@ import { PostsComponent } from 'src/app/components/posts/posts.component';
   templateUrl: './blog.component.html',
   styleUrls: ['./blog.component.css'],
   standalone: true,
-  imports: [JoinComponent,CategoryComponent,PostsComponent]
+  imports: [JoinComponent,CategoryComponent,PostsComponent, NgForOf]
 })
 export class BlogComponent {
 }

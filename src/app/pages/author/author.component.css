@@ -50,7 +50,7 @@
 }
 
 .author_color_line_child1 {
-    background-color: #FFD050;
+    background-color: var(--yellow);
     height: 20px;
     width: 760px;
 
@@ -64,7 +64,7 @@
 }
 
 .author_color_line_child2 {
-    background-color: #592EA9;
+    background-color: var(--purple);
     height: 20px;
     width: 263px;
 }
@@ -94,7 +94,7 @@
     line-height: 20px;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: #592EA9;
+    color: var(--purple);
     padding-bottom: 40px;
 }
 

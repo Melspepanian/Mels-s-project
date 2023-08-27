@@ -18,7 +18,7 @@
     line-height: 64px;
     text-align: center;
     letter-spacing: -2px;
-    color: #232536;
+    color: var(--color1);
 }
 
 .category_section1_elem1_text {
@@ -42,7 +42,7 @@
     text-align: center;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: #232536;
+    color: var(--color1);
 
 }
 
@@ -63,7 +63,7 @@
     font-size: 36px;
     line-height: 48px;
     letter-spacing: -2px;
-    color: #232536;
+    color: var(--color1);
     padding-top: 30px;
 
 }
@@ -84,7 +84,7 @@
     line-height: 20px;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: #592EA9;
+    color: var(--purple);
     padding-top: 30px;
 
 }
@@ -107,7 +107,7 @@
     font-size: 36px;
     line-height: 48px;
     letter-spacing: -2px;
-    color: #232536;
+    color: var(--color1);
 }
 
 .category_section2_parrent {
@@ -130,7 +130,7 @@
     font-size: 28px;
     line-height: 40px;
     letter-spacing: -1px;
-    color: #232536;
+    color: var(--color1);
 
 }
 
@@ -169,19 +169,19 @@
 }
 
 .category_section2_child2_child:hover {
-    background-color: #FFD050;
+    background-color: var(--yellow);
 }
 
 .category_section2_child2_child2:hover {
-    background-color: #FFD050;
+    background-color: var(--yellow);
 }
 
 .category_section2_child2_child3:hover {
-    background-color: #FFD050;
+    background-color: var(--yellow);
 }
 
 .category_section2_child2_child4:hover {
-    background-color: #FFD050;
+    background-color: var(--yellow);
 }
 
 .category_section2_elem2_title {
@@ -191,7 +191,7 @@
     font-size: 36px;
     line-height: 48px;
     letter-spacing: -2px;
-    color: #232536;
+    color: var(--color1);
     padding-top: 50px;
 
 }
@@ -216,7 +216,7 @@
     font-size: 14px;
     line-height: 32px;
     align-items: center;
-    color: #232536;
+    color: var(--color1);
     opacity: 0.7;
 
 }
